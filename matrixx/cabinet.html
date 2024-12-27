@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>matrix</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241228005321">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top">
+						<button data-close type="button" class="popup__close">
+							<svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#ffffff" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#ffffff" stroke-linecap="square" />
+							</svg>
+						</button>
+						<!-- <div class="leng-button">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#globe"></use>
+					</svg>
+					<span>Укр</span>
+					<svg class="shevron-svg">
+						<use xlink:href="img/icons/icons.svg#shevron"></use>
+					</svg>
+					<ul class="menu-control__leng-control leng-control">
+						<li class="leng-control__item"><a href="#">Eng</a></li>
+						<li class="leng-control__item"><a href="#">Rus</a></li>
+					</ul>
+				</div> -->
+					</div>
+					<div class="popup__body">
+						<div data-tabs class="tabs-popup">
+							<nav data-tabs-titles class="tabs-popup__navigation">
+								<button type="button" class="tabs-popup__title _tab-active">Увійти</button>
+								<button type="button" class="tabs-popup__title">Зареєструватись</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+
+									<form action="#" method="POST" class="form">
+										<div class="form__input-email">
+											<label for="#">Email</label>
+											<input type="text" name="form[email]" data-error="Error" placeholder="founder091@gmail.com" class="input">
+										</div>
+										<div class="form__input-pass">
+											<label for="#">Пароль</label>
+											<input type="password" name="password" placeholder="password">
+										</div>
+										<div class="form__input-bottom">
+											<div class="form__checkbox">
+												<input type="checkbox" name="" id="">
+												<label for="">Запам’ятати мене</label>
+											</div>
+											<a href="#">Забули пароль?</a>
+										</div>
+										<button type="submit" class="form-button">Увійти</button>
+										<div class="decor-form"><span>або</span></div>
+										<a href="#" class="form-button form-button--google">Увійти з гугл</a>
+									</form>
+								</div>
+								<div class="tabs__body">
+									<form action="#" method="POST" class="form">
+										<div class="form__input-name">
+											<label for="#">name</label>
+											<input type="text" name="" id="" placeholder="Olena">
+										</div>
+										<div class="form__input-email">
+											<label for="#">Email</label>
+											<input type="text" name="form[email]" data-error="Error" placeholder="founder091@gmail.com" class="input">
+										</div>
+										<div class="form__input-pass">
+											<label for="#">Пароль</label>
+											<input type="password" name="password" placeholder="password">
+										</div>
+										<div class="form__input-bottom">
+											<div class="form__checkbox">
+												<input type="checkbox" name="" id="">
+												<label for="">Запам’ятати мене</label>
+											</div>
+										</div>
+										<button type="submit" class="form-button">Увійти</button>
+										<div class="decor-form"><span>або</span></div>
+										<a href="#" class="form-button form-button--google">Увійти з гугл</a>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" data-da=".header__container, 767.98,2" class="header__logo">LOGO</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#home"></use>
+									</svg>
+									головна</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#calculator"></use>
+									</svg>
+									калькулятор</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#book"></use>
+									</svg>
+									про метод</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!--? показывать когда НЕ залогинен  -->
+				<a href="#" data-popup="#popup" class="header__login">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#user"></use>
+					</svg>
+					<span>увійти</span>
+				</a>
+				<!--?  -->
+				<!--? показывать когда залогинен -->
+				<div class="header__menu-control menu-control">
+					<div data-da=".menu__body, 767.98" class="menu-control__leng-button leng-button">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#globe"></use>
+						</svg>
+						<span>Укр</span>
+						<svg class="shevron-svg">
+							<use xlink:href="img/icons/icons.svg#shevron"></use>
+						</svg>
+						<ul class="menu-control__leng-control leng-control">
+							<li class="leng-control__item"><a href="#">Eng</a></li>
+							<li class="leng-control__item"><a href="#">Rus</a></li>
+						</ul>
+					</div>
+					<a href="cabinet.html" class="menu-control__user">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#user"></use>
+						</svg>
+					</a>
+				</div>
+				<!--? показывать когда залогинен -->
+			</div>
+		</header>
+		<main class="page">
+			<section class="cabinet">
+				<div class="cabinet__container">
+					<div data-tabs class="cabinet-tabs">
+						<nav data-tabs-titles class="cabinet-tabs__navigation">
+							<button type="button" class="cabinet-tabs__title _tab-active">мій кабінет</button>
+							<button type="button" class="cabinet-tabs__title">персональна матриця</button>
+							<button type="button" class="cabinet-tabs__title">матриця сумістності</button>
+							<button type="button" class="cabinet-tabs__title">дитяча матриця</button>
+							<button type="button" class="cabinet-tabs__title">історія</button>
+							<button type="button" class="cabinet-tabs__title">довідка</button>
+							<button type="button" class="cabinet-tabs__title">способи оплати</button>
+							<button type="button" class="cabinet-tabs__exit">вихід</button>
+						</nav>
+						<div data-tabs-body class="cabinet-tabs__content">
+							<div class="cabinet-tabs__body cabinet-tabs-body">
+								<h3 class="cabinet-tabs-body__title">Привіт, <span>Pavlo</span>!</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet vero blanditiis porro, veritatis pariatur distinctio natus expedita quia suscipit assumenda a nostrum velit provident itaque impedit illo repellendus nihil!</p>
+								<div class="cabinet-tabs-body__table cabinet-table">
+									<h3>Ваш баланс</h3>
+									<ul class="cabinet-table__balance">
+										<li>Матриця сумісності<i>5</i></li>
+										<li>Персональна матриця<i>7</i></li>
+										<li>Дитяча матриця<i>9</i></li>
+										<li>Всього <i>1</i></li>
+									</ul>
+									<a href="#" class="cabinet-table__btn button">Купити ще</a>
+								</div>
+							</div>
+							<div class="cabinet-tabs__body">
+								<div class="cabinet-card">
+									<div class="cabinet-card__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Розрахувати</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="cabinet-card__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+
+
+							</div>
+							<div class="cabinet-tabs__body">
+								<div class="cabinet-card">
+									<div class="cabinet-card__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__date">
+												<label for="birthdate">Партнер 1</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Партнер 2</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Розрахувати</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="cabinet-card__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cabinet-tabs__body">
+								<div class="cabinet-card">
+									<div class="cabinet-card__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя Дитини</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Розрахувати</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="cabinet-card__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cabinet-tabs__body">
+								<div class="cabinet-tabs-body__table cabinet-table">
+									<h3>Архів розрахунків</h3>
+									<ul class="cabinet-table__archive">
+										<li>Персональна матриця:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Матриця сумісності:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Персональна матриця:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Матриця сумісності:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Персональна матриця:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Матриця сумісності:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Персональна матриця:<span>18.07. 2001 +12. 09. 1994</span></li>
+										<li>Матриця сумісності:<span>18.07. 2001 +12. 09. 1994</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="cabinet-tabs__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum deleniti eos iure, totam aut esse labore ducimus laboriosam consequatur dolor. Ipsum, itaque beatae iste laborum tempora dolore. Veritatis, ab natus?</div>
+							<div class="cabinet-tabs__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae praesentium nobis est, fugiat neque voluptate. Id iure non veritatis aut debitis, perspiciatis labore, ut blanditiis nihil voluptate vel! Maxime, quo?</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20241228005321"></script>
+
+
+</body>
+
+</html>

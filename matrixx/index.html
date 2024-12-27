@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>matrix</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241228005321">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top">
+						<button data-close type="button" class="popup__close">
+							<svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#ffffff" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#ffffff" stroke-linecap="square" />
+							</svg>
+						</button>
+						<!-- <div class="leng-button">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#globe"></use>
+					</svg>
+					<span>Укр</span>
+					<svg class="shevron-svg">
+						<use xlink:href="img/icons/icons.svg#shevron"></use>
+					</svg>
+					<ul class="menu-control__leng-control leng-control">
+						<li class="leng-control__item"><a href="#">Eng</a></li>
+						<li class="leng-control__item"><a href="#">Rus</a></li>
+					</ul>
+				</div> -->
+					</div>
+					<div class="popup__body">
+						<div data-tabs class="tabs-popup">
+							<nav data-tabs-titles class="tabs-popup__navigation">
+								<button type="button" class="tabs-popup__title _tab-active">Увійти</button>
+								<button type="button" class="tabs-popup__title">Зареєструватись</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+
+									<form action="#" method="POST" class="form">
+										<div class="form__input-email">
+											<label for="#">Email</label>
+											<input type="text" name="form[email]" data-error="Error" placeholder="founder091@gmail.com" class="input">
+										</div>
+										<div class="form__input-pass">
+											<label for="#">Пароль</label>
+											<input type="password" name="password" placeholder="password">
+										</div>
+										<div class="form__input-bottom">
+											<div class="form__checkbox">
+												<input type="checkbox" name="" id="">
+												<label for="">Запам’ятати мене</label>
+											</div>
+											<a href="#">Забули пароль?</a>
+										</div>
+										<button type="submit" class="form-button">Увійти</button>
+										<div class="decor-form"><span>або</span></div>
+										<a href="#" class="form-button form-button--google">Увійти з гугл</a>
+									</form>
+								</div>
+								<div class="tabs__body">
+									<form action="#" method="POST" class="form">
+										<div class="form__input-name">
+											<label for="#">name</label>
+											<input type="text" name="" id="" placeholder="Olena">
+										</div>
+										<div class="form__input-email">
+											<label for="#">Email</label>
+											<input type="text" name="form[email]" data-error="Error" placeholder="founder091@gmail.com" class="input">
+										</div>
+										<div class="form__input-pass">
+											<label for="#">Пароль</label>
+											<input type="password" name="password" placeholder="password">
+										</div>
+										<div class="form__input-bottom">
+											<div class="form__checkbox">
+												<input type="checkbox" name="" id="">
+												<label for="">Запам’ятати мене</label>
+											</div>
+										</div>
+										<button type="submit" class="form-button">Увійти</button>
+										<div class="decor-form"><span>або</span></div>
+										<a href="#" class="form-button form-button--google">Увійти з гугл</a>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" data-da=".header__container, 767.98,2" class="header__logo">LOGO</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#home"></use>
+									</svg>
+									головна</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#calculator"></use>
+									</svg>
+									калькулятор</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#book"></use>
+									</svg>
+									про метод</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!--? показывать когда НЕ залогинен  -->
+				<a href="#" data-popup="#popup" class="header__login">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#user"></use>
+					</svg>
+					<span>увійти</span>
+				</a>
+				<!--?  -->
+				<!--? показывать когда залогинен -->
+				<div class="header__menu-control menu-control">
+					<div data-da=".menu__body, 767.98" class="menu-control__leng-button leng-button">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#globe"></use>
+						</svg>
+						<span>Укр</span>
+						<svg class="shevron-svg">
+							<use xlink:href="img/icons/icons.svg#shevron"></use>
+						</svg>
+						<ul class="menu-control__leng-control leng-control">
+							<li class="leng-control__item"><a href="#">Eng</a></li>
+							<li class="leng-control__item"><a href="#">Rus</a></li>
+						</ul>
+					</div>
+					<a href="cabinet.html" class="menu-control__user">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#user"></use>
+						</svg>
+					</a>
+				</div>
+				<!--? показывать когда залогинен -->
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1>Віднайди свій шлях:</h1>
+						<p>Розкрий справжнє призначення за допомогою Матриці Долі</p>
+						<a href="#" class="hero__button button">Розрахувати</a>
+					</div>
+					<div class="hero__picture">
+						<img class="hero__background" src="img/hero/cards-full.webp" alt="image">
+						<img class="hero__background-mobile" src="img/hero/cards-mobile.webp" alt="image">
+					</div>
+				</div>
+			</section>
+			<section class="calculator">
+				<div class="calculator__container">
+					<h2 class="calculator__title title-section">калькулятор</h2>
+					<div class="calculator__content">
+						<!--! каточка  -->
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<div class="card-front__border">
+										<h3 class="card-front__title">Дитяча <br> матриця</h3>
+										<div class="card-front__image">
+											<img src="img/card/card.webp" alt="img">
+										</div>
+										<div class="card-front__details card-details">
+											<span>Детальніше</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="card-back">
+									<div class="card-back__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Детальніше</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="card-back__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--! каточка  -->
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<div class="card-front__border">
+										<h3 class="card-front__title">матриця Сумісності</h3>
+										<div class="card-front__image">
+											<img src="img/card/card.webp" alt="img">
+										</div>
+										<div class="card-front__details card-details">
+											<span>Детальніше</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="card-back">
+									<div class="card-back__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Детальніше</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="card-back__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--! каточка  -->
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<div class="card-front__border">
+										<h3 class="card-front__title">матриця Сумісності</h3>
+										<div class="card-front__image">
+											<img src="img/card/card.webp" alt="img">
+										</div>
+										<div class="card-front__details card-details">
+											<span>Детальніше</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="card-back">
+									<div class="card-back__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Детальніше</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="card-back__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--! каточка  -->
+					</div>
+				</div>
+			</section>
+
+			<section class="your-share-matrix">
+				<div class="your-share-matrix__container">
+					<h2 class="your-share-matrix__title title-section">Ваша матриця долі</h2>
+					<div class="your-share-matrix__body">
+						<div class="your-share-matrix__body-content content-your-share-matrix">
+							<h3 class="content-your-share-matrix__title">Результат Розрахунку</h3>
+							<div class="content-your-share-matrix__spoilers-block">
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Особисті якості</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+							</div>
+							<img src="img/card/border-card.webp" alt="">
+						</div>
+						<div class="your-share-matrix__buttons">
+							<a href="#" class="button">Отримати повний доступ</a>
+							<a href="#" class="button">Роздрукувати</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="health-map">
+				<div class="health-map__container">
+					<h2 class="health-map__title title-section">Карта Здоров’я</h2>
+					<div class="health-map__content health-map-content">
+						<div class="health-map-content__star">
+							<img src="img/star.svg" alt="">
+						</div>
+						<div class="health-map-content__table table-block">
+							<table>
+								<thead>
+									<tr>
+										<th>Чакра</th>
+										<th>Фізика</th>
+										<th>Енергія</th>
+										<th>Емоції</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Сахасрара</td>
+										<td>15</td>
+										<td>10</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td>Аджна</td>
+										<td>21</td>
+										<td>34</td>
+										<td>6</td>
+									</tr>
+									<tr>
+										<td>Вішудха</td>
+										<td>15</td>
+										<td>10</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td>Анахата</td>
+										<td>15</td>
+										<td>10</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td>Маніпура</td>
+										<td>15</td>
+										<td>10</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td>Свадхистана</td>
+										<td>15</td>
+										<td>10</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td>Муладхара</td>
+										<td>15</td>
+										<td>10</td>
+										<td>7</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="table-block__bottom-block">
+								<div class="table-block__man">
+									<p>Родові програми по чоловічій лінії</p>
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="table-block__woman">
+									<p>Родові програми по жіночій лінії</p>
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="index.html" class="footer__logo">LOGO</a>
+				<ul class="footer__social-block social-block">
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241228005321"></script>
+
+
+</body>
+
+</html>
