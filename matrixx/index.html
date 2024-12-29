@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241228005321">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241229230706">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,6 +106,13 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
+							<!--  -->
+							<li class="menu__item menu__item--login"><a href="#" class="menu__link">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#user"></use>
+									</svg>
+									Вхід або Реєстрація</a></li>
+							<!--  -->
 							<li class="menu__item"><a href="index.html" class="menu__link">
 									<svg>
 										<use xlink:href="img/icons/icons.svg#home"></use>
@@ -125,16 +132,16 @@
 					</nav>
 				</div>
 				<!--? показывать когда НЕ залогинен  -->
-				<a href="#" data-popup="#popup" class="header__login">
-					<svg>
-						<use xlink:href="img/icons/icons.svg#user"></use>
-					</svg>
-					<span>увійти</span>
-				</a>
+				<!-- <a href="#" data-popup="#popup" class="header__login">
+			<svg>
+				<use xlink:href="img/icons/icons.svg#user"></use>
+			</svg>
+			<span>увійти</span>
+		</a> -->
 				<!--?  -->
 				<!--? показывать когда залогинен -->
 				<div class="header__menu-control menu-control">
-					<div data-da=".menu__body, 767.98" class="menu-control__leng-button leng-button">
+					<div class="menu-control__leng-button leng-button">
 						<svg>
 							<use xlink:href="img/icons/icons.svg#globe"></use>
 						</svg>
@@ -154,6 +161,19 @@
 					</a>
 				</div>
 				<!--? показывать когда залогинен -->
+				<div data-da=".menu__body, 768" class="leng-buttons-mobile">
+					<p>
+						<span>Мова</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#shevron"></use>
+						</svg>
+					</p>
+					<ul class="leng-buttons-mobile__list">
+						<li><a href="#">Українська</a></li>
+						<li><a href="#">Русский</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="page">
@@ -175,7 +195,111 @@
 					<h2 class="calculator__title title-section">калькулятор</h2>
 					<div class="calculator__content">
 						<!--! каточка  -->
-						<div class="card">
+						<div data-watch-threshold="0.5" data-watch-once data-watch class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<div class="card-front__border">
+										<h3 class="card-front__title">Персональна <br> матриця</h3>
+										<div class="card-front__image">
+											<img src="img/card/card.webp" alt="img">
+										</div>
+										<div class="card-front__details card-details">
+											<span>Детальніше</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="card-back">
+									<div class="card-back__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Розрахувати</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="card-back__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--! каточка  -->
+						<div data-watch-threshold="0.6" data-watch-once data-watch class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<div class="card-front__border">
+										<h3 class="card-front__title">матриця Сумісності</h3>
+										<div class="card-front__image">
+											<img src="img/card/card.webp" alt="img">
+										</div>
+										<div class="card-front__details card-details">
+											<span>Детальніше</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="card-back">
+									<div class="card-back__border">
+										<form action="/submit" method="post" class="card-form">
+											<div class="card-form__name">
+												<label for="name">Імʼя</label>
+												<input type="text" id="name" name="name" placeholder="Олена" required>
+											</div>
+											<div class="card-form__date">
+												<label for="birthdate">Дата народження:</label>
+												<input type="date" id="birthdate" name="birthdate" required>
+											</div>
+
+											<fieldset>
+												<legend class="gender-title">Стать:</legend>
+												<div class="card-form__radio-btn">
+													<label>
+														<input type="radio" name="gender" value="male" required> чловіча
+													</label>
+													<label>
+														<input type="radio" name="gender" value="female"> жіноча
+													</label>
+												</div>
+											</fieldset>
+
+											<button class="card-form__submit-card-form card-details" type="submit">
+												<span>Розрахувати</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
+												</svg></button>
+										</form>
+										<img class="card-back__design" src="img/card/border-card.webp" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--! каточка  -->
+						<div data-watch-threshold="0.7" data-watch-once data-watch class="card">
 							<div class="card-inner">
 								<div class="card-front">
 									<div class="card-front__border">
@@ -216,111 +340,7 @@
 											</fieldset>
 
 											<button class="card-form__submit-card-form card-details" type="submit">
-												<span>Детальніше</span>
-												<svg>
-													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-												</svg></button>
-										</form>
-										<img class="card-back__design" src="img/card/border-card.webp" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--! каточка  -->
-						<div class="card">
-							<div class="card-inner">
-								<div class="card-front">
-									<div class="card-front__border">
-										<h3 class="card-front__title">матриця Сумісності</h3>
-										<div class="card-front__image">
-											<img src="img/card/card.webp" alt="img">
-										</div>
-										<div class="card-front__details card-details">
-											<span>Детальніше</span>
-											<svg>
-												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-											</svg>
-										</div>
-									</div>
-								</div>
-								<div class="card-back">
-									<div class="card-back__border">
-										<form action="/submit" method="post" class="card-form">
-											<div class="card-form__name">
-												<label for="name">Імʼя</label>
-												<input type="text" id="name" name="name" placeholder="Олена" required>
-											</div>
-											<div class="card-form__date">
-												<label for="birthdate">Дата народження:</label>
-												<input type="date" id="birthdate" name="birthdate" required>
-											</div>
-
-											<fieldset>
-												<legend class="gender-title">Стать:</legend>
-												<div class="card-form__radio-btn">
-													<label>
-														<input type="radio" name="gender" value="male" required> чловіча
-													</label>
-													<label>
-														<input type="radio" name="gender" value="female"> жіноча
-													</label>
-												</div>
-											</fieldset>
-
-											<button class="card-form__submit-card-form card-details" type="submit">
-												<span>Детальніше</span>
-												<svg>
-													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-												</svg></button>
-										</form>
-										<img class="card-back__design" src="img/card/border-card.webp" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--! каточка  -->
-						<div class="card">
-							<div class="card-inner">
-								<div class="card-front">
-									<div class="card-front__border">
-										<h3 class="card-front__title">матриця Сумісності</h3>
-										<div class="card-front__image">
-											<img src="img/card/card.webp" alt="img">
-										</div>
-										<div class="card-front__details card-details">
-											<span>Детальніше</span>
-											<svg>
-												<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-											</svg>
-										</div>
-									</div>
-								</div>
-								<div class="card-back">
-									<div class="card-back__border">
-										<form action="/submit" method="post" class="card-form">
-											<div class="card-form__name">
-												<label for="name">Імʼя</label>
-												<input type="text" id="name" name="name" placeholder="Олена" required>
-											</div>
-											<div class="card-form__date">
-												<label for="birthdate">Дата народження:</label>
-												<input type="date" id="birthdate" name="birthdate" required>
-											</div>
-
-											<fieldset>
-												<legend class="gender-title">Стать:</legend>
-												<div class="card-form__radio-btn">
-													<label>
-														<input type="radio" name="gender" value="male" required> чловіча
-													</label>
-													<label>
-														<input type="radio" name="gender" value="female"> жіноча
-													</label>
-												</div>
-											</fieldset>
-
-											<button class="card-form__submit-card-form card-details" type="submit">
-												<span>Детальніше</span>
+												<span>Розрахувати</span>
 												<svg>
 													<use xlink:href="img/icons/icons.svg#arrow-right"></use>
 												</svg></button>
@@ -347,6 +367,15 @@
 									<details class="spollers__item">
 										<summary class="spollers__title">
 											<span>Особисті якості</span>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Призначення</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -358,7 +387,7 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Фінанси</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -370,7 +399,7 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Програми</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -382,7 +411,25 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Сексуальність</span>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Попереднє життя</span>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Діти</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -394,7 +441,7 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Стосунки</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -406,7 +453,7 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Батьки</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -418,7 +465,7 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Здоров'я</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
@@ -430,10 +477,31 @@
 								<div data-spollers class="spollers">
 									<details class="spollers__item">
 										<summary class="spollers__title">
-											<span>Особисті якості</span>
+											<span>Керівництво по життю</span>
 											<svg>
 												<use xlink:href="img/icons/icons.svg#lock"></use>
 											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Таланти</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#lock"></use>
+											</svg>
+										</summary>
+										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
+									</details>
+								</div>
+								<!--  -->
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Прогноз на рік</span>
 										</summary>
 										<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ipsam dicta necessitatibus ea commodi odit reiciendis nihil molestiae! Libero illo rerum quaerat harum facere autem impedit? Ipsa, a! Fugit.</div>
 									</details>
@@ -453,11 +521,144 @@
 			<section class="health-map">
 				<div class="health-map__container">
 					<h2 class="health-map__title title-section">Карта Здоров’я</h2>
-					<div class="health-map__content health-map-content">
-						<div class="health-map-content__star">
-							<img src="img/star.svg" alt="">
+					<div class="health-map__content health-map-content matrix-of-fate__content">
+						<div data-watch-threshold="0.5" data-watch-once data-watch class="health-map-content__star matrix-of-fate__image">
+							<img src="img/star-clear.svg" alt="">
+							<div class="matrix-of-fate__first-line-circle first-line-circle">
+								<div class="first-line-circle__center">21</div>
+								<div class="first-line-circle__top">21</div>
+								<div class="first-line-circle__left">21</div>
+								<div class="first-line-circle__down">21</div>
+								<div class="first-line-circle__right">21</div>
+								<div class="first-line-circle__top-left">21</div>
+								<div class="first-line-circle__top-right">21</div>
+								<div class="first-line-circle__down-left">21</div>
+								<div class="first-line-circle__down-right">21</div>
+							</div>
+							<!--  -->
+							<span class="matrix-of-fate__male-line">лінія чоловічого роду</span>
+							<span class="matrix-of-fate__female-line">лінія жіночого роду</span>
+							<!--  -->
+							<div class="matrix-of-fate__second-line-circle second-line-circle">
+								<div class="second-line-circle__center">9</div>
+								<div class="second-line-circle__top">9</div>
+								<div class="second-line-circle__left">9</div>
+								<div class="second-line-circle__down">9</div>
+								<div class="second-line-circle__right">9</div>
+								<div class="second-line-circle__top-left">9</div>
+								<div class="second-line-circle__top-right">9</div>
+								<div class="second-line-circle__down-left">9</div>
+								<div class="second-line-circle__down-right">9</div>
+							</div>
+							<!--  -->
+							<div class="matrix-of-fate__third-line-circle third-line-circle">
+								<div class="third-line-circle__center">15</div>
+								<div class="third-line-circle__top">15</div>
+								<div class="third-line-circle__left">15</div>
+								<div class="third-line-circle__down">15</div>
+								<div class="third-line-circle__right">15</div>
+								<div class="third-line-circle__top-left">15</div>
+								<div class="third-line-circle__top-right">15</div>
+								<div class="third-line-circle__down-left">15</div>
+								<div class="third-line-circle__down-right">15</div>
+							</div>
+							<!--  -->
+							<div class="matrix-of-fate__fourth-line-circle fourth-line-circle">
+								<div class="fourth-line-circle__top">7</div>
+								<div class="fourth-line-circle__left">7</div>
+								<div class="fourth-line-circle__down">7</div>
+								<div class="fourth-line-circle__right">7</div>
+								<div class="fourth-line-circle__down-right">7</div>
+							</div>
+							<ul class="top-left-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="top-left-bottom-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="top-right-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="top-right-bottom-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="bottom-right-top-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="bottom-right-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="bottom-left-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+							<ul class="bottom-left-top-list-matrix">
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</li>
+								<li>21</span>
+							</ul>
+							<!--  -->
+
 						</div>
-						<div class="health-map-content__table table-block">
+
+
+
+
+
+
+						<div data-watch-threshold="0.5" data-watch-once data-watch class="health-map-content__table table-block">
 							<table>
 								<thead>
 									<tr>
@@ -573,7 +774,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241228005321"></script>
+	<script src="js/app.min.js?_v=20241229230706"></script>
 
 
 </body>
