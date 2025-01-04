@@ -1232,8 +1232,8 @@ body::after {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  height: 9%;
-  width: 9%;
+  height: 7%;
+  width: 7%;
   font-weight: 600
 }
 .first-line-circle__top {
@@ -1269,12 +1269,12 @@ body::after {
   color: #fff
 }
 .first-line-circle__top-left {
-  left: 18%;
-  top: 18%;
+  left: 17%;
+  top: 17%;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  outline: 1px solid #000;
-  background-color: #fff
+  outline: 1px solid #ab8d60;
+  background-color: #ab8d60
 }
 .first-line-circle__top-right {
   right: 18%;
@@ -1282,7 +1282,7 @@ body::after {
   -webkit-transform: translate(50%,45%);
   transform: translate(50%,45%);
   outline: 1px solid #000;
-  background-color: #fff
+  background-color: #ab8d60
 }
 .first-line-circle__down-left {
   left: 18%;
@@ -1290,22 +1290,22 @@ body::after {
   -webkit-transform: translate(-50%,-40%);
   transform: translate(-50%,-40%);
   outline: 1px solid #000;
-  background-color: #fff
+  background-color: #ab8d60
 }
 .first-line-circle__down-right {
-  right: 18%;
-  bottom: 18%;
+  right: 17%;
+  bottom: 17%;
   -webkit-transform: translate(50%,50%);
   transform: translate(50%,50%);
   outline: 1px solid #000;
-  background-color: #fff
+  background-color: #ab8d60
 }
 .first-line-circle__center {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  background-color: #ffed4f
+  background-color: #ab8d60
 }
 .second-line-circle div {
   position: absolute;
@@ -1322,9 +1322,7 @@ body::after {
   left: 57.5%;
   top: 50%;
   -webkit-transform: translate(-38%,-50%);
-  transform: translate(-38%,-50%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-38%,-50%)
 }
 .second-line-circle__top {
   top: 9%;
@@ -1346,49 +1344,37 @@ body::after {
   bottom: 9%;
   left: 50%;
   -webkit-transform: translate(-50%,-6%);
-  transform: translate(-50%,-6%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-50%,-6%)
 }
 .second-line-circle__right {
   top: 50%;
   right: 9.5%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translateY(-50%)
 }
 .second-line-circle__top-left {
   left: 23%;
   top: 23%;
   -webkit-transform: translate(-38%,-35%);
-  transform: translate(-38%,-35%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-38%,-35%)
 }
 .second-line-circle__top-right {
   right: 23%;
   top: 19%;
   -webkit-transform: translate(38%,20%);
-  transform: translate(38%,20%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(38%,20%)
 }
 .second-line-circle__down-left {
   left: 21%;
   bottom: 21%;
   -webkit-transform: translate(-10%,8%);
-  transform: translate(-10%,8%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-10%,8%)
 }
 .second-line-circle__down-right {
   right: 20%;
   bottom: 20%;
   -webkit-transform: translate(-10%,-2%);
-  transform: translate(-10%,-2%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-10%,-2%)
 }
 .third-line-circle div {
   position: absolute;
@@ -1406,25 +1392,19 @@ body::after {
   left: 65%;
   top: 50%;
   -webkit-transform: translate(-44%,-50%);
-  transform: translate(-44%,-50%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-44%,-50%)
 }
 .third-line-circle__top {
   top: 17%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translateX(-50%)
 }
 .third-line-circle__left {
   top: 50%;
   left: 17%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translateY(-50%)
 }
 .third-line-circle__down {
   bottom: 17%;
@@ -1446,33 +1426,25 @@ body::after {
   left: 28%;
   top: 28%;
   -webkit-transform: translate(-42%,-42%);
-  transform: translate(-42%,-42%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-42%,-42%)
 }
 .third-line-circle__top-right {
   right: 28%;
   top: 25%;
   -webkit-transform: translate(38%,20%);
-  transform: translate(38%,20%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(38%,20%)
 }
 .third-line-circle__down-left {
   left: 26%;
   bottom: 26%;
   -webkit-transform: translate(-8%,2%);
-  transform: translate(-8%,2%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-8%,2%)
 }
 .third-line-circle__down-right {
   right: 25%;
   bottom: 25%;
   -webkit-transform: translate(-20%,-20%);
-  transform: translate(-20%,-20%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-20%,-20%)
 }
 .fourth-line-circle div {
   position: absolute;
@@ -1506,25 +1478,19 @@ body::after {
   bottom: 25%;
   left: 58%;
   -webkit-transform: translate(-50%,-20%);
-  transform: translate(-50%,-20%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-50%,-20%)
 }
 .fourth-line-circle__right {
   top: 58%;
   right: 25%;
   -webkit-transform: translate(-10%,-50%);
-  transform: translate(-10%,-50%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-10%,-50%)
 }
 .fourth-line-circle__down-right {
   right: 32%;
   bottom: 32%;
   -webkit-transform: translate(-20%,-20%);
-  transform: translate(-20%,-20%);
-  background-color: #fff;
-  outline: 1px solid #000
+  transform: translate(-20%,-20%)
 }
 .top-left-list-matrix {
   display: flex;
@@ -1746,7 +1712,7 @@ body::after {
     font-size: .875rem
   }
   .first-line-circle div {
-    font-size: 1.875rem
+    font-size: 1.625rem
   }
   .second-line-circle div {
     font-size: 1.25rem
@@ -2328,7 +2294,7 @@ body::after {
     font-size: clamp(.5rem ,.380952381rem + .5952380952vw ,.875rem)
   }
   .first-line-circle div {
-    font-size: clamp(.75rem ,.3928571429rem + 1.7857142857vw ,1.875rem)
+    font-size: clamp(.75rem ,.4722222222rem + 1.3888888889vw ,1.625rem)
   }
   .second-line-circle div {
     font-size: clamp(.75rem ,.5912698413rem + .7936507937vw ,1.25rem)
