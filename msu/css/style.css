@@ -364,14 +364,15 @@ body {
   background-size: cover
 }
 .footer__container {
-  padding: 2.5rem 0;
   height: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between
 }
 .footer__container ul {
-  display: flex
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9375rem
 }
 .hero {
   background-image: url(../img/background/hero.webp);
@@ -379,7 +380,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center
+  align-items: center;
+  padding-top: 5rem
 }
 .hero h1 {
   line-height: 1.04;
@@ -1492,7 +1494,7 @@ button.swiper-pagination-bullet {
     padding-bottom: .9375rem
   }
   .header__logo {
-    font-size: 2.25rem
+    font-size: 1.5rem
   }
   .header__button-sign {
     padding-left: 1.875rem
@@ -1685,6 +1687,9 @@ button.swiper-pagination-bullet {
   .header__button-sign {
     text-align: center
   }
+  .footer__container ul {
+    flex-direction: column
+  }
   .hero__form {
     flex-direction: column;
     gap: 1rem
@@ -1724,6 +1729,9 @@ button.swiper-pagination-bullet {
   .content-features__content {
     grid-template-columns: auto
   }
+  .features-tabs__button {
+    width: 100%
+  }
   .flex-class {
     flex-direction: column;
     row-gap: .9375rem
@@ -1742,6 +1750,12 @@ button.swiper-pagination-bullet {
     transform: translate(50%,0);
     flex-direction: row;
     right: 50%
+  }
+  .card-pricing__button {
+    width: 100%;
+    text-align: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem
   }
 }
 @media (min-width:20em)and (max-width:82.875em) {
@@ -1781,7 +1795,7 @@ button.swiper-pagination-bullet {
     padding-bottom: clamp(.9375rem ,.7585735586rem + .8946322068vw ,1.5rem)
   }
   .header__logo {
-    font-size: clamp(2.25rem ,2.0511928429rem + .9940357853vw ,2.875rem)
+    font-size: clamp(1.5rem ,1.0626242545rem + 2.1868787276vw ,2.875rem)
   }
   .header__button-sign {
     padding-left: clamp(1.875rem ,1.6761928429rem + .9940357853vw ,2.5rem)
