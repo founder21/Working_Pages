@@ -809,6 +809,13 @@ swiper-slide {
   .hero__button {
     align-self: auto
   }
+  .info-block li {
+    flex-direction: column;
+    text-align: center
+  }
+  .info-block__text span {
+    font-size: 1.125rem
+  }
   .choose-monster__container {
     flex-direction: column;
     justify-content: center;
@@ -828,19 +835,10 @@ swiper-slide {
   .download-block__container {
     flex-direction: column
   }
-  .download-block ul {
-    justify-content: center
-  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
-  }
-}
-@media (max-width:29.99875em) {
-  .info-block {
-    flex-direction: column;
-    gap: 1.5625rem
   }
 }
 @media (min-width:20em)and (max-width:73.5em) {
