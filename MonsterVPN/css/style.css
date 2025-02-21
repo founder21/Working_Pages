@@ -826,7 +826,7 @@ swiper-slide {
     top: 0;
     overflow: auto;
     background: #574da1;
-    padding: 7.5rem 1.875rem .9375rem .9375rem;
+    padding: 7.5rem 1.875rem 3.4375rem .9375rem;
     transition: right .3s
   }
   .menu__body::before {
