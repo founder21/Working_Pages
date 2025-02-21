@@ -151,7 +151,14 @@ h6 {
 .tabs__title {
   font-size: 1rem;
   text-align: left;
-  padding: .9375rem 1.5625rem
+  padding: .9375rem 1.5625rem;
+  display: flex;
+  align-items: center;
+  gap: .625rem
+}
+.tabs__title img {
+  width: 1.5625rem;
+  height: 1.5625rem
 }
 .tabs__title._tab-active {
   background: #005d4c
@@ -702,9 +709,6 @@ h6 {
   }
   .footer__center-block {
     justify-content: flex-start
-  }
-  .hero__container {
-    flex-direction: column
   }
   .hero__footer-block {
     flex-direction: column;
