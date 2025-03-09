@@ -249,11 +249,11 @@ body {
   text-transform: uppercase;
   line-height: 129%
 }
-.footer__social-block {
+.footer__social-block-btn {
   display: flex;
   gap: .9375rem
 }
-.footer__social-block a img {
+.footer__social-block-btn a img {
   width: 1.25rem;
   height: 1.25rem
 }
