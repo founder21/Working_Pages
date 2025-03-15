@@ -152,6 +152,12 @@ body {
   max-height: 1.25rem;
   max-width: 8.1875rem
 }
+.header__logo img {
+  width: 100%;
+  aspect-ratio: 131/20;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .hero__container {
   background-image: url(../img/bg.webp);
   background-size: cover;
