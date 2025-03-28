@@ -152,6 +152,12 @@ body {
   max-height: 1.25rem;
   max-width: 8.1875rem
 }
+.header__logo img {
+  width: 100%;
+  aspect-ratio: 131/20;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .hero__container {
   background-image: url(../img/bg.webp);
   background-size: cover;
@@ -159,14 +165,16 @@ body {
   background-position: center
 }
 .hero__content {
-  padding-top: 4.0625rem;
+  padding-top: 2.8125rem;
   padding-bottom: 2.8125rem
 }
 .hero__content p {
   font-weight: 600;
   text-align: center;
-  line-height: 129%;
-  padding-bottom: 3.125rem
+  line-height: 129%
+}
+.hero__content p:not(:last-child) {
+  margin-bottom: .9375rem
 }
 .hero__content p span {
   color: #9cda6b
@@ -193,6 +201,28 @@ body {
 .hero__buttons a:hover {
   background: #9cda6b;
   border: 1px solid #9cda6b
+}
+.hero__text {
+  font-size: 1.125rem;
+  padding-bottom: 1.875rem
+}
+.hero__list {
+  font-size: 1.125rem;
+  text-align: left;
+  padding-bottom: 1.875rem
+}
+.hero__list li {
+  display: flex;
+  align-items: flex-start
+}
+.hero__list li:not(:last-child) {
+  margin-bottom: .5rem
+}
+.hero__list li svg {
+  height: 1.125rem;
+  flex: 0 0 14px;
+  color: #9cda6b;
+  margin-right: .625rem
 }
 .hero__car-brand {
   display: flex;
@@ -259,4 +289,8 @@ body {
 }
 .active-lang {
   color: #fff
+}
+.hyundai {
+  width: 24px;
+  height: 12px
 }
