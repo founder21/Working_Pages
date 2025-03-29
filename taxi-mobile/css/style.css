@@ -73,7 +73,8 @@ h6 {
   font-size: inherit
 }
 body {
-  background: #000
+  background: #000;
+  font-weight: 400
 }
 .lock body {
   overflow: hidden;
