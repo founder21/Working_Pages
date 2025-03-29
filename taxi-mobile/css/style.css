@@ -74,7 +74,8 @@ h6 {
 }
 body {
   background: #000;
-  font-weight: 400
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
 .lock body {
   overflow: hidden;
