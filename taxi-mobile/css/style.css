@@ -160,6 +160,9 @@ body {
   -o-object-fit: cover;
   object-fit: cover
 }
+.hero {
+  font-weight: 400
+}
 .hero__container {
   background-image: url(../img/bg.webp);
   background-size: cover;
@@ -204,6 +207,7 @@ body {
   font-size: 1.125rem;
   padding-bottom: .9375rem;
   text-align: center;
+  font-weight: 400;
   line-height: 129%
 }
 .hero__text:not(:last-child) {
@@ -218,6 +222,7 @@ body {
   padding-bottom: .9375rem
 }
 .hero__list li {
+  font-weight: 400;
   display: flex;
   align-items: flex-start
 }
@@ -272,7 +277,8 @@ body {
   font-size: .875rem;
   display: flex;
   flex-direction: column;
-  gap: .375rem
+  gap: .375rem;
+  font-weight: 400
 }
 .card-item__about ul span {
   font-weight: 800;
