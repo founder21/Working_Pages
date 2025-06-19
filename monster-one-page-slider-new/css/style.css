@@ -236,7 +236,10 @@ body {
   line-height: 1.2;
   display: flex;
   flex-direction: column;
-  gap: 6px
+  gap: 8px
+}
+.slider-link p {
+  font-size: 18px
 }
 .img-mobile {
   display: none;
@@ -256,7 +259,6 @@ swiper-container {
 }
 swiper-slide {
   padding-right: 40px;
-  font-size: 20px;
   font-weight: 500;
   color: #fff;
   display: flex;
@@ -273,6 +275,7 @@ swiper-slide h2 {
   font-size: 40px
 }
 swiper-slide i {
+  font-style: normal;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -325,7 +328,7 @@ swiper-container::part(bullet-active) {
 @media (max-width:47.99875em) {
   body {
     background: linear-gradient(180deg,#43c1ef 0,#66b3f2 28.85%,#66aef2 61.54%,#2b7ecd 100%);
-    min-height: 100vh
+    min-height: 100svh
   }
   .menu__body {
     gap: 25px
@@ -377,7 +380,6 @@ swiper-container::part(bullet-active) {
     display: none
   }
   .mySwiper {
-    padding-bottom: 35px;
     min-height: 280px
   }
   swiper-container {
@@ -390,7 +392,10 @@ swiper-container::part(bullet-active) {
     padding-right: 0
   }
   swiper-slide h2 {
-    font-size: 30px
+    font-size: 35px
+  }
+  swiper-slide h2 span {
+    display: block
   }
   swiper-container::part(pagination) {
     top: auto;
