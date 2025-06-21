@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>MonsterVPN</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250621071029">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">IOS</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Android</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Mac</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">TV</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Windows</a></li>
+						</ul>
+					</nav>
+					<a href="#"><img src="img/basket.svg" alt="basket"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero-desctop">
+				<div class="hero-desctop__container">
+
+					<div class="hero-desctop__content">
+						<swiper-container class="mySwiper swiper-desctop" direction="vertical" pagination="true" pagination-clickable="true">
+							<swiper-slide>
+								<a href="#" class="swiper-desctop__slide">
+									<p>3 дня <span>бесплатного теста</span></p>
+									<h2>MonsterVPN <br><span>от 50 руб.</span></h2>
+									<p>Самая низкая цена на рынке! Без привязки карты и автосписаний!</p>
+									<div class="mobile-slide">
+										<img src="img/monster.webp" alt="#" class="mobile-slide__image">
+										<i>Попробуйте бесплатно!</i>
+									</div>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#" class="swiper-desctop__slide">
+									<p>Высокая <span>скорость серверов</span></p>
+									<h2>MonsterVPN <br><span>от 50 руб.</span></h2>
+									<p>Работает на всех ОС. Возможность подключения до 5-ти устройств!</p>
+									<div class="mobile-slide">
+										<img src="img/monster.webp" alt="#" class="mobile-slide__image">
+										<i>Включить VPN</i>
+									</div>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#" class="swiper-desctop__slide">
+									<p>Акция! <span>Скидка 60%</span></p>
+									<h2>MonsterVPN <br><span>от 50 руб.</span></h2>
+									<p>Сейчас цена на годовую подписку дешевле более чем в два раза!</p>
+									<div class="mobile-slide">
+										<img src="img/monster.webp" alt="#" class="mobile-slide__image">
+										<i>Купить</i>
+									</div>
+								</a>
+							</swiper-slide>
+						</swiper-container>
+
+
+
+
+
+
+						<div class="hero-desctop__decor"></div>
+						<div class="hero-desctop__decor--second"></div>
+					</div>
+
+					<div class="hero-desctop__picture">
+						<img src="img/monster-circle.webp" alt="picture">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__img">
+					<img src="img/monster-circle.webp" alt="monster img">
+				</div>
+				<div class="footer__text">
+					<p>Bytestorm Ltd. International House 100 Menzies Road, Hastings, UK, TN38 9BB</p>
+					<span>© 2025 <a href="#">monstervpn.cc</a></span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250621071029"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js?_v=20250621071029"></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			const swiperEl = document.querySelector('.swiper-desctop');
+
+			// Проверка ширины экрана
+			const isMobile = window.innerWidth <= 768;
+
+			// Установка направления
+			swiperEl.setAttribute('direction', isMobile ? 'horizontal' : 'vertical');
+		});
+	</script>
+
+</body>
+
+</html>
