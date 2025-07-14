@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Cab Drivers</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1752484692043"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752484692043">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752495001234"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752495001234">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -22,24 +22,27 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Наші авто</a>
+									<a href="#" class="menu__link" data-fls-scrollto=".our-cars">Наші авто</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Переваги</a>
+									<a href="#" class="menu__link" data-fls-scrollto=".our-advantages">Переваги</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Умови співпраці</a>
+									<a href="#" class="menu__link" data-fls-scrollto=".terms-of-cooperation">Умови співпраці</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Контакти</a>
+									<a href="#" class="menu__link" data-fls-scrollto=".map">Контакти</a>
 								</li>
 							</ul>
-							<a href="tel:+380679616808" class="menu__phone-num">
-								<svg>
-									<use xlink:href="./assets/img/spritemap.svg#sprite-phone"></use>
-								</svg>
-								+380679616808
-							</a>
+							<div class="menu__phone-block">
+								<a href="tel:+380679616808" class="menu__phone-num">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-phone"></use>
+									</svg>
+									+380679616808
+								</a>
+								<a href="tel:+380772278888" class="menu__phone-num">+380772278888</a>
+							</div>
 						</nav>
 					</div>
 					<!--
@@ -80,9 +83,9 @@
 										<div class="cars-block__car-item car-item">
 											<div class="car-item__photo">
 												<picture>
-													<source media="(max-width: 600px)" srcset="./assets/img/example-600.webp" type="image/webp">
-													<source media="(max-width: 1200px)" srcset="./assets/img/example-1200.webp" type="image/webp">
-													<img alt="" src="./assets/img/example.webp">
+													<source media="(max-width: 600px)" srcset="./assets/img/car/tesla-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/car/tesla-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/car/tesla.webp">
 												</picture>
 											</div>
 											<div class="car-item__about-car about-car">
@@ -132,9 +135,7 @@
 										<div class="cars-block__car-item car-item">
 											<div class="car-item__photo">
 												<picture>
-													<source media="(max-width: 600px)" srcset="./assets/img/example-600.webp" type="image/webp">
-													<source media="(max-width: 1200px)" srcset="./assets/img/example-1200.webp" type="image/webp">
-													<img alt="" src="./assets/img/example.webp">
+													<img alt="" src="./assets/img/car/tesla-3.webp">
 												</picture>
 											</div>
 											<div class="car-item__about-car about-car">
@@ -184,9 +185,7 @@
 										<div class="cars-block__car-item car-item">
 											<div class="car-item__photo">
 												<picture>
-													<source media="(max-width: 600px)" srcset="./assets/img/example-600.webp" type="image/webp">
-													<source media="(max-width: 1200px)" srcset="./assets/img/example-1200.webp" type="image/webp">
-													<img alt="" src="./assets/img/example.webp">
+													<img alt="" src="./assets/img/car/kona.webp">
 												</picture>
 											</div>
 											<div class="car-item__about-car about-car">
@@ -236,9 +235,7 @@
 										<div class="cars-block__car-item car-item">
 											<div class="car-item__photo">
 												<picture>
-													<source media="(max-width: 600px)" srcset="./assets/img/example-600.webp" type="image/webp">
-													<source media="(max-width: 1200px)" srcset="./assets/img/example-1200.webp" type="image/webp">
-													<img alt="" src="./assets/img/example.webp">
+													<img alt="" src="./assets/img/car/megane.webp">
 												</picture>
 											</div>
 											<div class="car-item__about-car about-car">
@@ -288,9 +285,9 @@
 										<div class="cars-block__car-item car-item">
 											<div class="car-item__photo">
 												<picture>
-													<source media="(max-width: 600px)" srcset="./assets/img/example-600.webp" type="image/webp">
-													<source media="(max-width: 1200px)" srcset="./assets/img/example-1200.webp" type="image/webp">
-													<img alt="" src="./assets/img/example.webp">
+													<source media="(max-width: 600px)" srcset="./assets/img/car/tucson-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/car/tucson-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/car/tucson.webp">
 												</picture>
 											</div>
 											<div class="car-item__about-car about-car">
@@ -839,7 +836,7 @@
 									Номер
 								</span>
 								<a href="tel:+380679616808">+380679616808 (робота в таксі)</a>
-								<a href="tel:+380679616808">+380679616808 (оренда Tesla)</a>
+								<a href="tel:+380772278888">+380772278888 (оренда Tesla)</a>
 							</div>
 						</div>
 					</div>

@@ -158,11 +158,16 @@ body {
 .menu {
   font-family: "Montserrat", sans-serif;
 }
+.menu__phone-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.625rem;
+}
 .menu__phone-num {
-  align-self: center;
   display: flex;
   align-items: center;
-  gap: 0.3125rem;
+  gap: 0.9375rem;
   color: #9cda6b;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -172,10 +177,11 @@ body {
   width: 1.875rem;
   height: 1.875rem;
   fill: #9cda6b;
+  transform: translateY(1.25rem);
 }
 .menu__body {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   row-gap: 0.9375rem;
 }
@@ -321,7 +327,7 @@ body {
 
 .hero {
   background: url("../assets/img/hero.webp") 0 0 no-repeat;
-  background-position: 0 0;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -413,9 +419,13 @@ body {
   border: 0.125rem solid #ededed;
   border-radius: 1rem;
 }
+.car-item:hover .about-car-more {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
 .car-item__photo {
   background: #dfdfdf;
-  max-width: 24.5rem;
 }
 .car-item__photo img {
   width: 100%;
@@ -449,11 +459,6 @@ body {
 }
 .about-car__setting-car-item img {
   flex-grow: 1;
-}
-.about-car:hover .about-car-more {
-  transform: translateY(-1.5625rem);
-  opacity: 1;
-  visibility: visible;
 }
 
 .our-advantages__container {
@@ -546,6 +551,9 @@ body {
   }
 }
 @media (max-width: 47.99875em){
+  .menu__phone-block {
+    align-self: center;
+  }
   .menu__body {
     flex-direction: column;
     align-items: flex-end;
