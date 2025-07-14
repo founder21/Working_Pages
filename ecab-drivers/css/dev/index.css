@@ -174,10 +174,9 @@ body {
   line-height: 1.33333;
 }
 .menu__phone-num svg {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.125rem;
+  height: 1.125rem;
   fill: #9cda6b;
-  transform: translateY(1.25rem);
 }
 .menu__body {
   display: flex;
