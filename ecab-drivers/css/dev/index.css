@@ -317,8 +317,10 @@ body {
 }
 
 .hero {
+  background: url("../assets/img/hero.webp") 0 0 no-repeat;
+  background-position: 0 0;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 .hero__button {
   align-self: center;
