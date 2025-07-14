@@ -190,6 +190,9 @@ body {
   color: #fff;
   transition: all 0.3s;
 }
+.menu__item:hover {
+  color: #9cda6b;
+}
 .menu__link {
   font-size: 1.1875rem;
   font-weight: 600;
@@ -334,6 +337,9 @@ body {
   transition: all 0.3s;
   animation: heartbeat 2s ease-in-out infinite both;
 }
+.hero__button:hover {
+  background: rgba(242, 242, 247, 0.8);
+}
 .hero__button svg {
   width: 1.9375rem;
   height: 1.9375rem;
@@ -443,6 +449,11 @@ body {
 }
 .about-car__setting-car-item img {
   flex-grow: 1;
+}
+.about-car:hover .about-car-more {
+  transform: translateY(-1.5625rem);
+  opacity: 1;
+  visibility: visible;
 }
 
 .our-advantages__container {
@@ -880,18 +891,7 @@ body {
   }
 }
 @media (any-hover: hover){
-  .menu__item:hover {
-    color: #9cda6b;
-  }
   .langs a:hover {
     text-decoration: underline;
-  }
-  .hero__button:hover {
-    background: rgba(242, 242, 247, 0.8);
-  }
-  .about-car:hover .about-car-more {
-    transform: translateY(-1.5625rem);
-    opacity: 1;
-    visibility: visible;
   }
 }
