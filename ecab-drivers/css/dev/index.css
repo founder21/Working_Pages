@@ -164,6 +164,19 @@ body {
   align-items: flex-end;
   gap: 0.625rem;
 }
+.menu__phone-btn {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.26316;
+  color: #fafafa;
+  border: 0.0625rem solid #9cda6b;
+  border-radius: 1.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.5625rem;
+  transition: all 0.3s;
+}
 .menu__phone-num {
   display: flex;
   align-items: center;
@@ -898,6 +911,10 @@ body {
   }
 }
 @media (any-hover: hover){
+  .menu__phone-btn:hover {
+    background: #9cda6b;
+    color: #121212;
+  }
   .langs a:hover {
     text-decoration: underline;
   }
