@@ -159,12 +159,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .menu__phone-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.625rem;
+  display: none;
 }
 .menu__phone-btn {
+  cursor: pointer;
   font-size: 1.1875rem;
   font-weight: 600;
   line-height: 1.26316;
@@ -179,8 +177,11 @@ body {
 }
 .menu__phone-num {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.9375rem;
+  justify-content: center;
+  column-gap: 0.9375rem;
+  row-gap: 0.25rem;
   color: #9cda6b;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -190,6 +191,9 @@ body {
   width: 1.125rem;
   height: 1.125rem;
   fill: #9cda6b;
+}
+.menu__phone-num span {
+  font-size: 0.875rem;
 }
 .menu__body {
   display: flex;
@@ -564,7 +568,14 @@ body {
 }
 @media (max-width: 47.99875em){
   .menu__phone-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
     align-self: center;
+  }
+  .menu__phone-btn {
+    display: none;
   }
   .menu__body {
     flex-direction: column;
