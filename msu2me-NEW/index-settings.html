@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>urlo.me</title>
-		<script type="module" crossorigin="" src="./js/index-logged.min.js?v=1754506132813"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
-		<link rel="modulepreload" crossorigin="" href="./js/inner.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754506132813">
-		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1754506132813">
-		<link rel="stylesheet" crossorigin="" href="./css/index-logged.min.css?v=1754506132813">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1754506132808"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1754506132808"></script>
+		<script type="module" crossorigin="" src="./js/inner.min.js?v=1754506132808"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754506132808">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1754506132808">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1754506132808">
+		<link rel="stylesheet" crossorigin="" href="./css/index-settings.min.css?v=1754506132808">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -121,7 +122,7 @@
 						Andriy Bondarenko
 					</a>
 				</aside>
-				<main class="page page--dashboard dashboard">
+				<main class="page page--settings settings">
 					<div data-fls-headerdashboard="" class="header-dashboard">
 						<div class="header-dashboard__container">
 							<p class="name-user-dashboard" data-fls-dynamic=".dashboard, 768,1">
@@ -152,164 +153,20 @@
 							</div>
 						</div>
 					</div>
-					<section class="make-it">
-						<div class="make-it__container">
-							<div class="make-it__block make-it-block">
-								<div class="make-it-block__body-text">
-									<span>Make it scannable</span>
-									<a href="#" class="make-it-block__button button-green">Go to codes</a>
-								</div>
-								<div class="make-it-block__picture">
-									<picture>
-										<img alt="Image" src="./assets/img/make-it/make-it-code.webp">
-									</picture>
-								</div>
-							</div>
-							<!--
--->
-							<div class="make-it__block make-it-block">
-								<div class="make-it-block__body-text">
-									<span>Make it shorter</span>
-									<a href="#" class="make-it-block__button button-green">Go to links</a>
-								</div>
-								<div class="make-it-block__picture">
-									<picture>
-										<img alt="Image" src="./assets/img/make-it/make-it-link.webp">
-									</picture>
-								</div>
+					<div class="settings__container">
+						<div data-fls-tabs="" class="tabs">
+							<nav data-fls-tabs-titles="" class="tabs__navigation">
+								<button type="button" class="tabs__title --tab-active">Таб №1</button>
+								<button type="button" class="tabs__title">Таб №2</button>
+								<button type="button" class="tabs__title">Таб №3</button>
+							</nav>
+							<div data-fls-tabs-body="" class="tabs__content">
+								<div class="tabs__body">Вміст першого таба</div>
+								<div class="tabs__body">Вміст другого таба</div>
+								<div class="tabs__body">Вміст третього таба</div>
 							</div>
 						</div>
-					</section>
-					<section class="general-perfomance">
-						<div class="general-perfomance__container">
-							<div class="general-perfomance__header">
-								<h3 class="general-perfomance__header-title">General perfomance</h3>
-								<div class="general-perfomance__sort-by filter-block">
-									<div class="filter-block__select">
-										Sort by: month
-										<svg>
-											<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
-										</svg>
-										<div class="filter-block__list">
-											<a href="#">days</a>
-											<a href="#">days</a>
-											<a href="#">days</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="general-perfomance__body general-perfomance-body">
-								<!--
--->
-								<div class="general-perfomance-body__item">
-									<div class="general-perfomance-body__text-block">
-										<span>127</span>
-										<p>Total views</p>
-									</div>
-									<div class="general-perfomance-body__picture">
-										<picture>
-											<img alt="" src="./assets/img/iconses/perfomance-stitic.webp">
-										</picture>
-									</div>
-								</div>
-								<!--
--->
-								<div class="general-perfomance-body__item">
-									<div class="general-perfomance-body__text-block">
-										<span>17$</span>
-										<p>Total earnings</p>
-									</div>
-									<div class="general-perfomance-body__picture">
-										<picture>
-											<img alt="" src="./assets/img/iconses/perfomance-wallet.webp">
-										</picture>
-									</div>
-								</div>
-								<!--
--->
-								<div class="general-perfomance-body__item">
-									<div class="general-perfomance-body__text-block">
-										<span>2$</span>
-										<p>Average CPM</p>
-									</div>
-									<div class="general-perfomance-body__picture">
-										<picture>
-											<img alt="" src="./assets/img/iconses/perfomance-pos.webp">
-										</picture>
-									</div>
-								</div>
-								<!--
--->
-							</div>
-						</div>
-					</section>
-					<section class="links-month-perfomance">
-						<div class="links-month-perfomance__container">
-							<h3 class="links-month-perfomance__title section-title">Links month perfomance</h3>
-							<!--
--->
-							<div class="chart-fullwidth-container">
-								<canvas id="myWideChart"></canvas>
-								<div id="wideTooltip" class="tooltip"></div>
-							</div>
-							<table>
-								<thead>
-									<tr>
-										<th>Date</th>
-										<th>Total Clicks</th>
-										<th>Daily Earnings</th>
-										<th>Daily CPM</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>01.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td>02.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td>03.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td>04.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td>05.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td>06.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td>07.01.2025</td>
-										<td>0</td>
-										<td>0.00</td>
-										<td>0.00</td>
-									</tr>
-								</tbody>
-							</table>
-							<!--
--->
-						</div>
-					</section>
+					</div>
 				</main>
 			</div>
 		</div>

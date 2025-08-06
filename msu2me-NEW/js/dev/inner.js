@@ -1,4 +1,4 @@
-import { h as bodyLockStatus, i as bodyLockToggle } from "./app.min.js";
+import { f as bodyLockStatus, g as bodyLockToggle } from "./app.min.js";
 function menuInit() {
   document.addEventListener("click", function(e) {
     if (bodyLockStatus && e.target.closest("[data-fls-menudash]")) {

@@ -324,15 +324,15 @@ if (document.querySelector("[data-fls-dynamic]")) {
   window.addEventListener("load", () => new DynamicAdapt());
 }
 export {
-  setHash as a,
-  slideUp as b,
-  slideToggle as c,
+  slideUp as a,
+  slideDown as b,
+  bodyLock as c,
   dataMediaQueries as d,
-  bodyLock as e,
-  bodyUnlock as f,
-  getHash as g,
-  bodyLockStatus as h,
-  bodyLockToggle as i,
-  gotoBlock as j,
-  slideDown as s
+  bodyUnlock as e,
+  bodyLockStatus as f,
+  bodyLockToggle as g,
+  gotoBlock as h,
+  getHash as i,
+  setHash as j,
+  slideToggle as s
 };
