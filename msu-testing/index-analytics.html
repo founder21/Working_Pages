@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>urlo.me</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1764021710525"></script>
+		<script type="module" crossorigin="" src="./js/inner.min.js?v=1764021710525"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1764021710525">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1764021710525">
+		<link rel="stylesheet" crossorigin="" href="./css/index-analytics.min.css?v=1764021710525">
+		<link rel="stylesheet" crossorigin="" href="./css/langs.min.css?v=1764021710525">
+		<link rel="stylesheet" crossorigin="" href="./css/headerdashboard.min.css?v=1764021710525">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="inner">
+				<aside data-fls-sidebar="" class="sidebar">
+					<div class="sidebar__container">
+						<div class="sidebar__logo">
+							<picture>
+								<img alt="logo" src="./assets/img/logo.webp">
+							</picture>
+						</div>
+						<a href="#" class="sidebar__button button-green">Create</a>
+					</div>
+					<div class="sidebar__navigation">
+						<div class="menu-dashboard__menu menu-dashboard" data-fls-dynamic=".header-dashboard__container, 768">
+							<button type="button" data-fls-menudash="" class="menu-dashboard__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu-dashboard__body">
+								<ul class="menu-dashboard__list">
+									<li class="menu-dashboard__item menu-dashboard-active">
+										<a href="index-logged.html" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-a-dashboard"></use>
+											</svg>
+											Dashboard
+										</a>
+									</li>
+									<li class="menu-dashboard__item">
+										<a href="index-links.html" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-a-links"></use>
+											</svg>
+											Links
+										</a>
+									</li>
+									<li class="menu-dashboard__item">
+										<a href="index-qr-code.html" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-a-qr-codes"></use>
+											</svg>
+											QR-codes
+										</a>
+									</li>
+									<li class="menu-dashboard__item">
+										<a href="index-analytics.html" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-a-analytics"></use>
+											</svg>
+											Analytics
+										</a>
+									</li>
+									<li class="menu-dashboard__item">
+										<a href="#" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-a-earnings"></use>
+											</svg>
+											Earnings
+										</a>
+									</li>
+									<li class="menu-dashboard__item">
+										<a href="index-settings.html" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-settings"></use>
+											</svg>
+											Settings
+										</a>
+									</li>
+									<li class="menu-dashboard__item">
+										<a href="index-help.html" class="menu-dashboard__link">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-help"></use>
+											</svg>
+											Help
+										</a>
+									</li>
+								</ul>
+								<div class="menu-dashboard__user-mobile">
+									<a href="#" class="user-mobile__user user-line">
+										<picture>
+											<img alt="Image" src="./assets/img/user_photo.webp">
+										</picture>
+										Andriy Bondarenko
+									</a>
+								</div>
+							</nav>
+						</div>
+						<!-- ------------------------- -->
+					</div>
+					<div class="sidebar__container">
+						<div data-fls-probanner="" data-fls-dynamic=".menu-dashboard__body, 768,1" class="banner-pro">
+							<div class="banner-pro__text">
+								<span>
+									Go Pro
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-crown"></use>
+									</svg>
+								</span>
+								<p>Get maximum profit from your links</p>
+							</div>
+							<button class="banner-pro__button button-green">Upgrade now</button>
+						</div>
+					</div>
+					<a href="#" class="sidebar__user user-line">
+						<picture>
+							<img alt="Image" src="./assets/img/user_photo.webp">
+						</picture>
+						Andriy Bondarenko
+					</a>
+				</aside>
+				<script src="https://cdn.js?v=1764021710525delivr.net/npm/chart.js?v=1764021710525"></script>
+				<script src="components/pages/analytics/analytics.js?v=1764021710525"></script>
+				<main class="page page--analytics analytics">
+					<div data-fls-headerdashboard="" class="header-dashboard">
+						<div class="header-dashboard__container">
+							<p class="name-user-dashboard" data-fls-dynamic=".dashboard, 768,1">
+								Hello,
+								<span>Andriy!</span>
+							</p>
+							<picture>
+								<img class="header-dashboard__logo" alt="Image" src="./assets/img/logo.webp">
+							</picture>
+							<div class="header-dashboard__menu">
+								<div data-fls-langs="" class="lang-block">
+									<div class="lang-block__active-lang">
+										EN
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+										</svg>
+									</div>
+									<ul class="lang-block__list">
+										<li>
+											<a href="#" class="lang-block__item">RU</a>
+										</li>
+										<li>
+											<a href="#" class="lang-block__item">UA</a>
+										</li>
+									</ul>
+								</div>
+								<a href="#" data-fls-button="" class="header-dashboard__button button-green">Upgrade</a>
+							</div>
+						</div>
+					</div>
+					<div class="analytics__container">
+						<div class="title-section-dash">
+							<h2>Analytics</h2>
+						</div>
+						<div class="analytics__filter filter-block">
+							<button class="filter-block__tag">
+								<svg>
+									<use xlink:href="./assets/img/spritemap.svg#sprite-tag"></use>
+								</svg>
+								Tag
+								<svg class="filter-block__chevron">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+								</svg>
+								<ul class="filter-block__list-down">
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+								</ul>
+							</button>
+							<button class="filter-block__data">
+								<svg>
+									<use xlink:href="./assets/img/spritemap.svg#sprite-calendar"></use>
+								</svg>
+								Filter by date
+								<svg class="filter-block__chevron">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+								</svg>
+								<ul class="filter-block__list-down">
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+								</ul>
+							</button>
+							<button class="filter-block__type">
+								Type:
+								<span>QR coses</span>
+								<svg class="filter-block__chevron">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+								</svg>
+								<ul class="filter-block__list-down">
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+								</ul>
+							</button>
+							<button class="filter-block__country">
+								Country
+								<svg class="filter-block__chevron">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+								</svg>
+								<ul class="filter-block__list-down">
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+								</ul>
+							</button>
+							<button class="filter-block__device">
+								Device
+								<svg class="filter-block__chevron">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+								</svg>
+								<ul class="filter-block__list-down">
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+									<li>
+										<a href="#">select</a>
+									</li>
+								</ul>
+							</button>
+							<button class="filter-block__clear">
+								Clear all
+								<svg class="filter-block__chevron">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-plus"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="analytics__total-block total-block-analitics">
+							<div class="total-block-analitics__item">
+								<div class="total-block-analitics__text-block">
+									<span>127</span>
+									<p>Total views</p>
+								</div>
+								<div class="total-block-analitics__picture">
+									<picture>
+										<img alt="" src="./assets/img/iconses/perfomance-stitic.webp">
+									</picture>
+								</div>
+							</div>
+							<div class="total-block-analitics__item">
+								<div class="total-block-analitics__text-block">
+									<span>127</span>
+									<p>Total views</p>
+								</div>
+								<div class="total-block-analitics__picture">
+									<picture>
+										<img alt="" src="./assets/img/iconses/pos-machine.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<section class="analytics__locations-block locations-block">
+							<div class="locations-block__title">
+								<h4>Locations</h4>
+								<div class="locations-block__count">
+									<div class="locations-block__count-selected">
+										Country
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<!-- ! grafic one---START -->
+							<div class="circle-grafic">
+								<div class="chart-container">
+									<canvas id="myDonut"></canvas>
+								</div>
+								<table class="analytics-table" id="analyticsTable">
+									<thead>
+										<tr>
+											<th>Country</th>
+											<th>City</th>
+											<th>Clicks</th>
+											<th>Users</th>
+										</tr>
+									</thead>
+									<tbody><!-- Здесь строки будут сгенерированы JS --></tbody>
+								</table>
+							</div>
+							<script src="https://cdn.js?v=1764021710525delivr.net/npm/chart.js?v=1764021710525"></script>
+							<script src="donut.js?v=1764021710525"></script>
+							<script>
+                // Ваши исходные данные для графика и таблицы
+                const tableData = [{
+                    country: 'Country 1',
+                    city: 'City 1',
+                    clicks: 3,
+                    users: 3
+                  },
+                  {
+                    country: 'Country 2',
+                    city: 'City 2',
+                    clicks: 5,
+                    users: 4
+                  },
+                  {
+                    country: 'Country 3',
+                    city: 'City 3',
+                    clicks: 7,
+                    users: 7
+                  },
+                  {
+                    country: 'Country 4',
+                    city: 'City 4',
+                    clicks: 2,
+                    users: 1
+                  }
+                ];
+
+                // Часть для графика (ранее)
+                const data = tableData.map(row => row.clicks);
+                const labels = tableData.map(row => row.country);
+                const colors = ['#7CEDC5', '#A6FFC3', '#8BE57D', '#C0F082'];
+
+                const ctx = document.getElementById('myDonut').getContext('2d');
+                const chart = new Chart(ctx, {
+                  type: 'doughnut',
+                  data: {
+                    labels: labels,
+                    datasets: [{
+                      data: data,
+                      backgroundColor: colors,
+                      borderWidth: 0
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                      legend: {
+                        display: false
+                      },
+                    }
+                  }
+                });
+
+                // Генерация строк таблицы в HTML
+                function renderTable() {
+                  const tbody = document.querySelector('#analyticsTable tbody');
+                  tbody.innerHTML = '';
+                  tableData.forEach(row => {
+                    tbody.innerHTML += `
+								[object Object]
+								`;
+                  });
+                }
+
+                renderTable();
+							</script>
+							<!-- ! grafic one---END -->
+						</section>
+						<section class="analytics__devices-block devices-block">
+							<div class="locations-block__title">
+								<h4>Devices</h4>
+							</div>
+							<!-- !second grafic---START -->
+							<div class="circle-grafic">
+								<div class="chart-container">
+									<canvas id="myDonut2"></canvas>
+								</div>
+								<table class="analytics-table" id="analyticsTable2">
+									<thead>
+										<tr>
+											<th></th>
+											<!-- Квадратик -->
+											<th>Device</th>
+											<th>Percent</th>
+										</tr>
+									</thead>
+									<tbody><!-- Данные появятся через JS --></tbody>
+								</table>
+								<!-- Данные появятся через JS -->
+							</div>
+							<script>
+              // Данные для второго графика и таблицы
+              const tableData2 = [{
+                  device: 'Device A',
+                  percent: 15
+                },
+                {
+                  device: 'Device B',
+                  percent: 25
+                },
+                {
+                  device: 'Device C',
+                  percent: 40
+                },
+                {
+                  device: 'Device D',
+                  percent: 20
+                }
+              ];
+
+              const data2 = tableData2.map(row => row.percent);
+              const labels2 = tableData2.map(row => row.device);
+              // Можно задать новые цвета, либо использовать старые:
+              const colors2 = ['#FE7F9C', '#71E1FF', '#C28DFF', '#EFDD73'];
+
+              const ctx2 = document.getElementById('myDonut2').getContext('2d');
+              const chart2 = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                  labels: labels2,
+                  datasets: [{
+                    data: data2,
+                    backgroundColor: colors2,
+                    borderWidth: 0
+                  }]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  cutout: '70%',
+                  plugins: {
+                    legend: {
+                      display: false
+                    },
+                  }
+                }
+              });
+
+              function renderTable2() {
+                const tbody2 = document.querySelector('#analyticsTable2 tbody');
+                tbody2.innerHTML = '';
+                tableData2.forEach((row, i) => {
+                  tbody2.innerHTML += `
+								[object Object]
+								`;
+                });
+              }
+              renderTable2();
+						</script>
+							<!-- ! second grafic---END -->
+						</section>
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
