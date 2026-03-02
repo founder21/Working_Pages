@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>eFleet.cc</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20260302191615">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<aside class="dashboard">
+			<div class="dashboard__logo">
+				<p>e</p><span>Fleet.cc</span>
+			</div>
+			<div class="dashboard__menu menu">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item menu__item-active">
+							<a href="index.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-dashboard"></use>
+								</svg>
+								<span>Главная</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="cars.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-car"></use>
+								</svg>
+								<span>Автомобили</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="drivers.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-user"></use>
+								</svg>
+								<span>Водители</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="statistics.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-statistic"></use>
+								</svg>
+								<span>Статистика</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="service.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-service"></use>
+								</svg>
+								<span>Обслуживание</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="mileage.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-speed-limited"></use>
+								</svg>
+								<span>Пробег</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="charging.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-energe"></use>
+								</svg>
+								<span>Зарядки</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="locations.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-location"></use>
+								</svg>
+								<span>Локации</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="settings.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-setting"></use>
+								</svg>
+								<span>Настройки</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="settlement.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-list"></use>
+								</svg>
+								<span>Расчетка</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="login.html" class="menu__link">
+								<img src="img/icon-login-page/icon-google.svg">
+								<span>LOGIN PAGE</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div data-da=".menu__body, 768" class="dashboard__who-logged who-logged">
+				<div class="who-logged__image">
+					<img src="img/example-user.webp" alt="photo">
+				</div>
+				<div class="who-logged__name">
+					<p>Тесла Маньяк</p>
+					<span>t_maniacal@mail.com</span>
+				</div>
+			</div>
+
+			<button class="dashboard__btn-scroll-dashboard">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-layout"></use>
+				</svg>
+			</button>
+		</aside>
+
+		<main class="page page__drivers">
+			<section class="info-message">
+				<ul class="info-message__list">
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-planned">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-service"></use>
+							</svg>
+							<div class=" info-message__show-more-old">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-take-note">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-checked-deffense"></use>
+							</svg>
+							<div class=" info-message__show-more-old">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-planned">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-service"></use>
+							</svg>
+							<div class="info-message__show-more">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-error">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-attention"></use>
+							</svg>
+							<div class="info-message__show-more">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="title-page-block">
+				<div class="title-page-block__title">
+					<h2>Водители парка</h2>
+					<span>267 человек</span>
+				</div>
+			</section>
+
+			<section class="drivers-item-graff">
+				<div class="drivers-item-graff__filter filter-select">
+					<select class="filter-select__items">
+						<option value="auto">Текущая неделя</option>
+						<option value="auto">Текущая неделя</option>
+						<option value="auto">Текущая неделя</option>
+						<option value="auto">Текущая неделя</option>
+						<option value="auto">Текущая неделя</option>
+					</select>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-vector-select"></use>
+					</svg>
+				</div>
+				<div class="widgets-section--grid-three">
+					<div class="widgets-section__widget-item widget-item widget-item--graph">
+						<div class="widget-item-title-block">
+							<div class="icon-div">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-driver-on"></use>
+								</svg>
+							</div>
+							<h4>Водители на смене</h4>
+						</div>
+						<div class="widget-item__circle-graph">
+							<!--круглый график-->
+							<div id="drivers-shift-chart"></div>
+						</div>
+					</div>
+					<div class="widgets-section__widget-item widget-item widget-item--graph">
+						<div class="widget-item-title-block">
+							<div class="icon-div">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-travel-class"></use>
+								</svg>
+							</div>
+							<h4>Класс поездок</h4>
+						</div>
+						<div class="widget-item__circle-graph">
+							<!--круглый график-->
+							<div id="trip-class-chart"></div>
+						</div>
+					</div>
+					<div class="widgets-section__widget-item widget-item widget-item--graph">
+						<div class="widget-item-title-block">
+							<div class="icon-div">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-income"></use>
+								</svg>
+							</div>
+							<h4>Общий доход</h4>
+						</div>
+						<div class="widget-item__circle-graph">
+							<!--круглый график-->
+							<div id="total-revenue-chart"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="selection">
+				<button class="selection__btn selection__btn-active">Онлайн</button>
+				<button class="selection__btn">Оффлайн</button>
+				<button class="selection__btn">Uklon</button>
+				<button class="selection__btn">Bolt</button>
+				<button class="selection__btn">Uber</button>
+				<a href="#" class="selection__add-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+					</svg>
+				</a>
+			</div>
+
+			<section class="biggest-list">
+				<div class="biggest-list__wrapp">
+					<div class="biggest-list__settings">
+						<!-- поиск -->
+						<div class="search input-style">
+							<input type="search" placeholder="поиск...">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-search"></use>
+							</svg>
+						</div>
+						<!-- календар -->
+						<a href="#" class="calendar-input input-style">
+							<span>22.12.2025</span>
+							-
+							<span>22.12.2025</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+						</a>
+						<!-- кнопки настроек -->
+						<div class="button-settings-settings-block">
+							<button class="button-settings-settings-block__sample">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-search-two"></use>
+								</svg>
+								<span>2</span>
+							</button>
+							<button class="button-settings-settings-block__static">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-static-two"></use>
+								</svg>
+							</button>
+							<button class="button-settings-settings-block__setting">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-settings-two"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<!--! большая таблица -->
+					<div class="biggest-list__table-wrap">
+						<table class="biggest-list__table table-main">
+							<thead class="table-main__thead">
+								<tr>
+									<th>Водитель, позывной</th>
+									<th>Телефон</th>
+									<th>Статус, рейтинг</th>
+									<th></th>
+									<th></th>
+									<th>Поезд...</th>
+									<th>Последн...</th>
+									<th>Км/зака...</th>
+									<th>Км/по...</th>
+									<th>Км/трек...</th>
+									<th>Доход (UAH)</th>
+									<th>Доход/км</th>
+									<th>Доход/год</th>
+									<th></th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody class="table-main__tbody">
+								<tr>
+									<td class="table-main__user">
+										<div class="table-main__user-photo">
+											<img src="img/example-user.webp">
+										</div>
+										<span>Зорин Владимир</span>
+									</td>
+									<td class="table-main__num-tell">0665051772</td>
+
+									<td>
+										<div class="table-main__taxi">
+											<span style="background: var(--diagram-grey);"></span>
+											Uklon (236)
+										</div>
+									</td>
+									<td>
+										<div class="table-main__taxi">
+											<span style="background: var(--diagram-blue);"></span>
+											Bolt (415)
+										</div>
+									</td>
+									<td>
+										<div class="table-main__taxi">
+											<span style="background: var(--diagram-green);"></span>
+											Uber (390)
+										</div>
+									</td>
+									<td>201</td>
+									<td>11:23</td>
+									<td>349</td>
+									<td>31</td>
+									<td>445</td>
+									<td>
+										<span class="table-main__item table-red-item">34720.76</span>
+									</td>
+									<td>34</td>
+									<td>
+										<span class="table-main__item table-green-item">780098.41</span>
+									</td>
+									<td></td>
+									<td>
+										<button class="table-main__edit-btn">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-message"></use>
+											</svg>
+										</button>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td class="table-main__user">
+										<div class="table-main__user-photo">
+											<img src="img/example-user.webp">
+										</div>
+										<span>Зорин Владимир</span>
+									</td>
+									<td class="table-main__num-tell">0665051772</td>
+
+									<td>
+										<div class="table-main__taxi">
+											<span style="background: var(--diagram-grey);"></span>
+											Uklon (236)
+										</div>
+									</td>
+									<td>
+										<div class="table-main__taxi">
+											<span style="background: var(--diagram-blue);"></span>
+											Bolt (415)
+										</div>
+									</td>
+									<td>
+										<div class="table-main__taxi">
+											<span style="background: var(--diagram-green);"></span>
+											Uber (390)
+										</div>
+									</td>
+									<td>201</td>
+									<td>11:23</td>
+									<td>349</td>
+									<td>31</td>
+									<td>445</td>
+									<td>
+										<span class="table-main__item table-red-item">34720.76</span>
+									</td>
+									<td>34</td>
+									<td>
+										<span class="table-main__item table-green-item">780098.41</span>
+									</td>
+									<td></td>
+									<td>
+										<button class="table-main__edit-btn">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-message"></use>
+											</svg>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			if (!window.DonutChart) return;
+
+			// =========================================================
+			// 1. ГРАФИК: ВОДИТЕЛИ НА СМЕНЕ
+			// =========================================================
+			const driversData = [{
+					label: 'На линии',
+					value: 689,
+					color: 'var(--diagram-green)'
+				},
+				{
+					label: 'С заказом',
+					value: 489,
+					color: 'var(--diagram-blue)'
+				},
+				{
+					label: 'Оффлайн',
+					value: 509,
+					color: 'var(--diagram-grey)'
+				}
+			];
+
+			new DonutChart('#drivers-shift-chart', driversData, {
+				size: 240,
+				thickness: 24,
+				totalLabel: 'Всего',
+				valueFormatter: (val) => `${val}`
+			});
+
+
+			// =========================================================
+			// 2. ГРАФИК: КЛАСС ПОЕЗДОК
+			// =========================================================
+			const tripClassData = [{
+					label: 'Стандарт',
+					value: 367,
+					color: 'var(--diagram-blue)'
+				},
+				{
+					label: 'Комфорт',
+					value: 217,
+					color: 'var(--diagram-orange)'
+				},
+				{
+					label: 'Бизнес',
+					value: 69,
+					color: 'var(--diagram-green)'
+				},
+				{
+					label: 'Прайм',
+					value: 47,
+					color: 'var(--diagram-violet)'
+				}
+			];
+
+			new DonutChart('#trip-class-chart', tripClassData, {
+				size: 240,
+				thickness: 24,
+				totalLabel: 'Всего',
+				// Просто число с разделением тысяч (например, 1 240)
+				valueFormatter: (val) => `${val.toLocaleString()}`
+			});
+
+
+			// =========================================================
+			// 3. ГРАФИК: ОБЩИЙ ДОХОД
+			// =========================================================
+			const revenueData = [{
+					label: 'Uklon',
+					value: 45600,
+					color: 'var(--diagram-yellow)'
+				},
+				{
+					label: 'Bolt',
+					value: 45600,
+					color: 'var(--diagram-green)'
+				},
+				{
+					label: 'Uber',
+					value: 89200,
+					color: 'var(--color-menu)'
+				}
+			];
+
+			new DonutChart('#total-revenue-chart', revenueData, {
+				size: 240,
+				thickness: 24,
+				totalLabel: 'Доход',
+				// Со знаком ₴, наш класс сам добавит его и в легенду
+				valueFormatter: (val) => `₴ ${val.toLocaleString()}`
+			});
+
+		});
+	</script>
+	<script src="js/app.min.js?_v=20260302191615"></script>
+	<!-- переключение темы -->
+	<script>
+		(function() {
+			const htmlElement = document.documentElement;
+
+			// 1. Мгновенная установка темы (до отрисовки DOM)
+			const savedTheme = localStorage.getItem('theme');
+			const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
+
+			htmlElement.setAttribute('data-theme', initialTheme);
+
+			// 2. Логика работы переключателя
+			document.addEventListener('DOMContentLoaded', () => {
+				const themeToggle = document.querySelector('.switch'); // Новый класс .switch
+
+				if (themeToggle) {
+					// Синхронизируем положение чекбокса с текущей темой
+					// Если тема light — чекбокс нажат (Checked)
+					themeToggle.checked = (htmlElement.getAttribute('data-theme') === 'light');
+
+					themeToggle.addEventListener('change', () => {
+						const newTheme = themeToggle.checked ? 'light' : 'dark';
+
+						htmlElement.setAttribute('data-theme', newTheme);
+						localStorage.setItem('theme', newTheme);
+					});
+				}
+			});
+		})();
+	</script>
+	<!-- переключение бокоового меню -->
+	<script>
+		const btn = document.querySelector('.dashboard__btn-scroll-dashboard');
+		const wrapper = document.querySelector('.wrapper');
+
+		// 1. Проверяем сохраненное состояние в памяти браузера при загрузке
+		if (localStorage.getItem('sidebar-collapsed') === 'true') {
+			wrapper.classList.add('is-collapsed');
+		}
+
+		btn.addEventListener('click', () => {
+			// 2. Переключаем класс
+			wrapper.classList.toggle('is-collapsed');
+
+			// 3. Сохраняем текущее состояние (true или false)
+			const isCollapsed = wrapper.classList.contains('is-collapsed');
+			localStorage.setItem('sidebar-collapsed', isCollapsed);
+		});
+	</script>
+	<!--  -->
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>eFleet.cc</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20260302191615">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper-login">
+
+		<main class="page page__login login">
+
+			<div class="login__wrapper">
+				<div class="login__image">
+					<img src="img/login.webp">
+					<a class="login__logo">
+						<p>e</p><span>Fleet.cc</span>
+					</a>
+				</div>
+				<div class="login__content">
+					<div class="login__body">
+						<div class="login__body-title">
+							<span>Добро пожаловать</span>
+							<p>Введите свой логин и пароль для входа в личный кабинет</p>
+						</div>
+						<div class="login__body-form">
+							<form action="" class="form-login">
+								<input type="text" name="" id="" placeholder="Логин" class="input-style">
+								<input type="password" name="" id="" placeholder="Пароль" class="input-style">
+								<div class="form-login__remember-me">
+									<a class="form-login__remember-me-checkbox">
+										<input type="checkbox">
+										<label>Remember me</label>
+									</a>
+									<a href="#" class="form-login__remember-me-forgotten">Забыли пароль?</a>
+								</div>
+								<a href="index.html" class="form-login__btn-log">Войти</a>
+								<div class="form-login__line-or">
+									<div></div>
+									<span>или</span>
+									<div></div>
+								</div>
+								<div class="form-login__google-apple-block">
+									<a href="#">
+										<img src="img/icon-login-page/icon-google.svg">
+										<span>Войти через аккаунт Google</span></a>
+									<a href="#">
+										<img src="img/icon-login-page/icon-apple.svg">
+										<span>Войти через аккаунт Apple</span></a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20260302191615"></script>
+	<!-- переключение темы -->
+	<script>
+		(function() {
+			const htmlElement = document.documentElement;
+
+			// 1. Мгновенная установка темы (до отрисовки DOM)
+			const savedTheme = localStorage.getItem('theme');
+			const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
+
+			htmlElement.setAttribute('data-theme', initialTheme);
+
+			// 2. Логика работы переключателя
+			document.addEventListener('DOMContentLoaded', () => {
+				const themeToggle = document.querySelector('.switch'); // Новый класс .switch
+
+				if (themeToggle) {
+					// Синхронизируем положение чекбокса с текущей темой
+					// Если тема light — чекбокс нажат (Checked)
+					themeToggle.checked = (htmlElement.getAttribute('data-theme') === 'light');
+
+					themeToggle.addEventListener('change', () => {
+						const newTheme = themeToggle.checked ? 'light' : 'dark';
+
+						htmlElement.setAttribute('data-theme', newTheme);
+						localStorage.setItem('theme', newTheme);
+					});
+				}
+			});
+		})();
+	</script>
+	<!-- переключение бокоового меню -->
+	<script>
+		const btn = document.querySelector('.dashboard__btn-scroll-dashboard');
+		const wrapper = document.querySelector('.wrapper');
+
+		// 1. Проверяем сохраненное состояние в памяти браузера при загрузке
+		if (localStorage.getItem('sidebar-collapsed') === 'true') {
+			wrapper.classList.add('is-collapsed');
+		}
+
+		btn.addEventListener('click', () => {
+			// 2. Переключаем класс
+			wrapper.classList.toggle('is-collapsed');
+
+			// 3. Сохраняем текущее состояние (true или false)
+			const isCollapsed = wrapper.classList.contains('is-collapsed');
+			localStorage.setItem('sidebar-collapsed', isCollapsed);
+		});
+	</script>
+	<!--  -->
+</body>
+
+</html>

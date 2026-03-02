@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>eFleet.cc</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20260302191615">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<aside class="dashboard">
+			<div class="dashboard__logo">
+				<p>e</p><span>Fleet.cc</span>
+			</div>
+			<div class="dashboard__menu menu">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item menu__item-active">
+							<a href="index.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-dashboard"></use>
+								</svg>
+								<span>Главная</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="cars.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-car"></use>
+								</svg>
+								<span>Автомобили</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="drivers.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-user"></use>
+								</svg>
+								<span>Водители</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="statistics.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-statistic"></use>
+								</svg>
+								<span>Статистика</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="service.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-service"></use>
+								</svg>
+								<span>Обслуживание</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="mileage.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-speed-limited"></use>
+								</svg>
+								<span>Пробег</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="charging.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-energe"></use>
+								</svg>
+								<span>Зарядки</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="locations.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-location"></use>
+								</svg>
+								<span>Локации</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="settings.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-setting"></use>
+								</svg>
+								<span>Настройки</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="settlement.html" class="menu__link">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-list"></use>
+								</svg>
+								<span>Расчетка</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="login.html" class="menu__link">
+								<img src="img/icon-login-page/icon-google.svg">
+								<span>LOGIN PAGE</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div data-da=".menu__body, 768" class="dashboard__who-logged who-logged">
+				<div class="who-logged__image">
+					<img src="img/example-user.webp" alt="photo">
+				</div>
+				<div class="who-logged__name">
+					<p>Тесла Маньяк</p>
+					<span>t_maniacal@mail.com</span>
+				</div>
+			</div>
+
+			<button class="dashboard__btn-scroll-dashboard">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-layout"></use>
+				</svg>
+			</button>
+		</aside>
+
+		<main class="page">
+			<section class="info-message">
+				<ul class="info-message__list">
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-planned">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-service"></use>
+							</svg>
+							<div class=" info-message__show-more-old">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-take-note">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-checked-deffense"></use>
+							</svg>
+							<div class=" info-message__show-more-old">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-planned">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-service"></use>
+							</svg>
+							<div class="info-message__show-more">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="info-message__item">
+						<a href="#" class="info-message__link info-message-error">
+							<svg class="info-message__link-label">
+								<use xlink:href="img/icons/icons.svg#icon-attention"></use>
+							</svg>
+							<div class="info-message__show-more">
+								<span class="info-message__number-car">KA9175KH</span>
+								<p>Заканчивается полис страхования 28.12.2025</p>
+								<button class="info-message__icon-close">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+									</svg>
+								</button>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="title-page-block">
+				<div class="title-page-block__title">
+					<h2>Автомобили на линии</h2>
+					<span>953 авто</span>
+				</div>
+				<article class="title-page-block__filter filter-select">
+					<select class="filter-select__items">
+						<option value="auto">Авто</option>
+						<option value="auto">Авто</option>
+						<option value="auto">Авто</option>
+						<option value="auto">Авто</option>
+						<option value="auto">Авто</option>
+					</select>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-vector-select"></use>
+					</svg>
+				</article>
+			</section>
+
+
+			<section class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170941.48870007726!2d30.338177350202834!3d50.4314062581724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsINCj0LrRgNCw0ZfQvdCwLCAwMjAwMA!5e0!3m2!1suk!2spe!4v1769889073013!5m2!1suk!2spe" width="100%" height="436" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+
+			<section class="widgets-section widgets-section--grid-two">
+				<div class="widgets-section__widget-item widget-item widget-item--graph">
+					<article class="widget-item-title-block">
+						<div class="icon-div">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-general-statistics"></use>
+							</svg>
+						</div>
+						<h4>Общая статистика</h4>
+					</article>
+					<!--? круглый график-->
+					<article class="widget-item__circle-graph circle-graph">
+						<div id="general-stats-chart"></div>
+						<!--? круглый график-->
+					</article>
+				</div>
+
+
+				<div class="widgets-section__widget-item widget-item">
+					<div class="widget-item-title-block">
+						<div class="icon-div">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-dont-go"></use>
+							</svg>
+						</div>
+						<h4>Сегодня не выходили</h4>
+						<span>84 авто</span>
+						<a href="#" class="widget-item__icon-square">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-square"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="widget-item__body">
+						<div class="widget-item__body-title">
+							<span>Водитель</span>
+							<span>телефон</span>
+						</div>
+						<ul class="widget-item__list">
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<img src="img/example-user.webp">
+									<p>Бондарчук Виталий (1043079)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<a href="tel:+380665051772">380665051772</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="income-section">
+				<div class="income-section__body">
+					<div class="income-section__title title-section">
+						<div class="title-section__icon-div icon-div">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-income"></use>
+							</svg>
+						</div>
+						<h4 class="title-section__title">Доход</h4>
+					</div>
+					<div class="income-section__filter filter-select">
+						<select class="filter-select__items">
+							<option value="#">Текущая неделя</option>
+							<option value="#">Текущая неделя</option>
+							<option value="#">Текущая неделя</option>
+							<option value="#">Текущая неделя</option>
+							<option value="#">Текущая неделя</option>
+						</select>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-vector-select"></use>
+						</svg>
+					</div>
+					<div class="income-section__body-small-card">
+						<div class="income-section__main-blocks main-blocks-income-section">
+							<div class="main-blocks-income-section__item">
+								<span class="main-blocks-income-section__item-title">Общий доход</span>
+								<h5 class="main-blocks-income-section__item-sum">₴ 35 890.00</h5>
+								<div class="main-blocks-income-section__item-about">
+									<p><span>Комиссия:</span>₴ 8 906.09</p>
+									<p><span>Чистыми:</span>₴ 23 567.87</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="income-section__main-blocks main-blocks-income-section">
+							<div class="main-blocks-income-section__item">
+								<span class="main-blocks-income-section__item-title">Выполнено заявок</span>
+								<h5 class="main-blocks-income-section__item-sum">167</h5>
+								<div class="main-blocks-income-section__item-about">
+									<p><span>Пробег с пассажиром:</span>2 348.0 км</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="income-section__main-blocks main-blocks-income-section">
+							<div class="main-blocks-income-section__item">
+								<span class="main-blocks-income-section__item-title">Средний чек</span>
+								<h5 class="main-blocks-income-section__item-sum">₴ 236.26</h5>
+								<div class="main-blocks-income-section__item-about">
+									<p><span>Средняя цена:</span>₴ 35.76/км</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="grafics-big-body">
+						<!-- большой график -->
+						<div class="charts-grid">
+							<div class="chart-item">
+								<div class="grafics-big-body__title">
+									<div class="widget-item-title-block">
+										<h4>Доход за неделю</h4>
+									</div>
+									<div id="bar-legend" class="legend-inline"></div>
+								</div>
+								<div id="income-bar-chart"></div>
+							</div>
+						</div>
+						<!-- большой график -->
+						<!--? круглый график-->
+						<div class="circle-graph circle-graph--limited-width">
+							<div class="widget-item-title-block">
+								<h4>Доход по продуктам</h4>
+							</div>
+							<div id="my-income-chart"></div>
+
+							<!-- <div class="circle-graph__body">
+								<div class="circle-graph__body-line">
+									<div class="circle-graph__body-dots" style="background: var(--diagram-green);"></div>
+									<div class="circle-graph__body-text">Бизнес</div>
+									<span>₴ 15 678.47</span>
+									<p>48.90%</p>
+								</div>
+								<div class="circle-graph__body-line">
+									<div class="circle-graph__body-dots" style="background: var(--diagram-blue);"></div>
+									<div class="circle-graph__body-text">Стандарт</div>
+									<span>₴ 15 678.47</span>
+									<p>48.90%</p>
+								</div>
+								<div class="circle-graph__body-line">
+									<div class="circle-graph__body-dots" style="background: var(--diagram-red);"></div>
+									<div class="circle-graph__body-text">Доставка</div>
+									<span>₴ 15 678.47</span>
+									<p>48.90%</p>
+								</div>
+								<div class="circle-graph__body-line">
+									<div class="circle-graph__body-dots" style="background: var(--diagram-orange);"></div>
+									<div class="circle-graph__body-text">Комфорт</div>
+									<span>₴ 15 678.47</span>
+									<p>48.90%</p>
+								</div>
+								<div class="circle-graph__body-line">
+									<div class="circle-graph__body-dots" style="background: var(--diagram-violet);"></div>
+									<div class="circle-graph__body-text">Прайм</div>
+									<span>₴ 15 678.47</span>
+									<p>48.90%</p>
+								</div>
+							</div> -->
+							<!--? круглый график-->
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+
+			<section class="widgets-section widgets-section--grid-two">
+				<div class="widgets-section__widget-item widget-item widget-item--graph">
+					<div class="widget-item-title-block">
+						<div class="icon-div">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-money"></use>
+							</svg>
+						</div>
+						<h4>Еще не окупились</h4>
+						<span>4 авто</span>
+						<a href="#" class="widget-item__icon-square">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-square"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="widget-item__body">
+						<div class="widget-item__body-title">
+							<span>Авто, номер</span>
+							<span>Окупаемость</span>
+						</div>
+						<ul class="widget-item__list">
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<p>Hyundai Kona (AA6672YC)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<div class="car-progress-wrapper">
+										<div class="car-skeleton"></div>
+										<div class="car-fill" id="carProgressFill" style="width: 100%;"></div> <!--размер прогрес бара авто-->>
+									</div>
+									<span>48%</span>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<p>Hyundai Kona (AA6672YC)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<div class="car-progress-wrapper">
+										<div class="car-skeleton"></div>
+										<div class="car-fill" id="carProgressFill" style="width: 41%;"></div> <!--размер прогрес бара авто-->>
+									</div>
+									<span>48%</span>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+									<p>Hyundai Kona (AA6672YC)</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<div class="car-progress-wrapper">
+										<div class="car-skeleton"></div>
+										<div class="car-fill" id="carProgressFill" style="width: 70%;"></div> <!--размер прогрес бара авто-->>
+									</div>
+									<span>48%</span>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="widgets-section__widget-item widget-item">
+					<div class="widget-item-title-block">
+						<div class="icon-div">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-not-user"></use>
+							</svg>
+						</div>
+						<h4>Нет водителей</h4>
+						<span>14 авто</span>
+						<a href="#" class="widget-item__icon-square">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-square"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="widget-item__body">
+						<div class="widget-item__body-title">
+							<span>Марка авто</span>
+							<span>Номер</span>
+						</div>
+						<ul class="widget-item__list">
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+
+									<p>Mercedes-Benz E 220</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<span>AA6672YC</span>
+								</div>
+							</li>
+							<li class="widget-item__list-item">
+								<div class="widget-item__list-item-left-side">
+
+									<p>Mercedes-Benz E 220</p>
+								</div>
+								<div class="widget-item__list-item-right-side">
+									<span>AA6672YC</span>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="cashbox">
+				<div class="cashbox__body">
+					<div class="widget-item-title-block title-section">
+						<div class="icon-div">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-bascket-cash"></use>
+							</svg>
+						</div>
+						<h4>Касса</h4>
+						<a href="#" class="widget-item__icon-square">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-square"></use>
+							</svg>
+						</a>
+					</div>
+					<!--! таблица -->
+					<div class="biggest-list__table-wrap">
+						<table class="biggest-list__table table-main">
+							<thead class="table-main__thead">
+								<tr>
+									<th>Водитель, позывной</th>
+									<th>Касса</th>
+									<th>Коэффициент</th>
+									<th>Из чека</th>
+									<th>Должен</th>
+									<th>Процент</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody class="table-main__tbody">
+								<tr>
+									<td class="table-main__user">
+										<div class="table-main__user-photo">
+											<img src="img/example-user.webp">
+										</div>
+										<span>Зорин Владимир</span>
+									</td>
+									<td>
+										<span class="table-main__item table-red-item">-6709.00</span>
+									</td>
+									<td>0.23</td>
+									<td>321.58</td>
+									<td>0.00</td>
+									<td>13.8</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="table-main__user">
+										<div class="table-main__user-photo">
+											<img src="img/example-user.webp">
+										</div>
+										<span>Зорин Владимир</span>
+									</td>
+									<td>
+										<span class="table-main__item table-green-item">274024.95</span>
+									</td>
+									<td>0.23</td>
+									<td>321.58</td>
+									<td>0.00</td>
+									<td>13.8</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
+
+
+	<script>
+		// Чекаємо завантаження скриптів збірки
+		document.addEventListener("DOMContentLoaded", function() {
+			const chartData = [{
+					label: 'Стандарт',
+					value: 15678.47,
+					color: 'var(--diagram-blue)'
+				},
+				{
+					label: 'Комфорт',
+					value: 12600.17,
+					color: 'var(--diagram-orange)'
+				},
+				{
+					label: 'Бизнес',
+					value: 8033.69,
+					color: 'var(--diagram-green)'
+				},
+				{
+					label: 'Прайм',
+					value: 5021.47,
+					color: 'var(--diagram-violet)'
+				},
+				{
+					label: 'Доставка',
+					value: 1821.00,
+					color: 'var(--diagram-red)'
+				}
+			];
+
+			const generalStatsData = [{
+					label: 'На линии',
+					value: 689,
+					color: 'var(--diagram-green)'
+				},
+				{
+					label: 'С заказом',
+					value: 459,
+					color: 'var(--diagram-blue)'
+				},
+				{
+					label: 'Оффлайн',
+					value: 509,
+					color: 'var(--diagram-grey)'
+				}
+			];
+
+			// Перевіряємо, чи клас доступний, і створюємо графік
+			if (window.DonutChart) {
+				// ГРАФИК 1: С валютой
+				new DonutChart('#my-income-chart', chartData, {
+					size: 260,
+					chartSize: 180,
+					thickness: 24,
+					totalLabel: 'Доход',
+					valueFormatter: (val) => `₴ ${val.toLocaleString()}` // Тут есть ₴, значит и в легенде будет
+				});
+
+				// ГРАФИК 2: Без валюты
+				new DonutChart('#general-stats-chart', generalStatsData, {
+					size: 260,
+					chartSize: 180,
+					thickness: 24,
+					totalLabel: 'Всего',
+					valueFormatter: (val) => `${val.toLocaleString()}` // Тут нет ₴, в легенде тоже исчезнет
+				});
+			}
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			if (!window.StackedBarChart || !window.DonutChart) return;
+
+			const barColors = {
+				bonuses: 'var(--diagram-blue)',
+				cash: 'var(--diagram-yellow)',
+				nonCash: 'var(--diagram-green)',
+				compensation: 'var(--diagram-violet)',
+				commission: 'var(--diagram-orange)',
+				fines: 'var(--diagram-red)',
+				tips: 'var(--diagram-grey)'
+			};
+
+			// Рендер легенды (убедитесь, что ID 'bar-legend' есть в HTML)
+			const legendEl = document.getElementById('bar-legend');
+			if (legendEl) {
+				const barLegendItems = [{
+						label: 'Бонусы',
+						color: barColors.bonuses
+					},
+					{
+						label: 'Наличные',
+						color: barColors.cash
+					},
+					{
+						label: 'Безналичные',
+						color: barColors.nonCash
+					},
+					{
+						label: 'Компенсации',
+						color: barColors.compensation
+					},
+					{
+						label: 'Комиссия',
+						color: barColors.commission
+					},
+					{
+						label: 'Штрафы',
+						color: barColors.fines
+					},
+					{
+						label: 'Чаевые',
+						color: barColors.tips
+					}
+				];
+
+				legendEl.innerHTML = '';
+				barLegendItems.forEach(item => {
+					const div = document.createElement('div');
+					div.className = 'legend-item';
+					div.style.display = 'inline-flex';
+					div.style.alignItems = 'center';
+					div.style.marginRight = '15px';
+					div.style.fontSize = '12px';
+					div.style.color = '#b3b3b3';
+					div.innerHTML = `<div style="width:8px; height:8px; border-radius:50%; background:${item.color}; margin-right:6px;"></div><span>${item.label}</span>`;
+					legendEl.appendChild(div);
+				});
+			}
+
+			const weeklyData = [{
+					label: '05.01(Пн)',
+					segments: [{
+						value: 4000,
+						color: barColors.nonCash
+					}, {
+						value: 3000,
+						color: barColors.cash
+					}, {
+						value: 1000,
+						color: barColors.commission
+					}, {
+						value: 500,
+						color: barColors.tips
+					}]
+				},
+				{
+					label: '06.01(Вт)',
+					segments: [{
+						value: 3000,
+						color: barColors.nonCash
+					}, {
+						value: 2000,
+						color: barColors.cash
+					}, {
+						value: 800,
+						color: barColors.commission
+					}, {
+						value: 200,
+						color: barColors.bonuses
+					}]
+				},
+				{
+					label: '07.01(Ср)',
+					segments: [{
+						value: 5000,
+						color: barColors.nonCash
+					}, {
+						value: 4000,
+						color: barColors.cash
+					}, {
+						value: 1200,
+						color: barColors.commission
+					}]
+				},
+				{
+					label: '08.01(Чт)',
+					segments: [{
+						value: 2500,
+						color: barColors.nonCash
+					}, {
+						value: 1500,
+						color: barColors.cash
+					}, {
+						value: 500,
+						color: barColors.commission
+					}]
+				},
+				{
+					label: '09.01(Пт)',
+					segments: [{
+						value: 3500,
+						color: barColors.nonCash
+					}, {
+						value: 3000,
+						color: barColors.cash
+					}, {
+						value: 900,
+						color: barColors.commission
+					}, {
+						value: 400,
+						color: barColors.fines
+					}]
+				},
+				{
+					label: '10.01(Сб)',
+					segments: [{
+						value: 4500,
+						color: barColors.nonCash
+					}, {
+						value: 3500,
+						color: barColors.cash
+					}, {
+						value: 1100,
+						color: barColors.commission
+					}, {
+						value: 600,
+						color: barColors.tips
+					}]
+				},
+				{
+					label: '11.01(Вс)',
+					segments: [{
+						value: 4200,
+						color: barColors.nonCash
+					}, {
+						value: 3200,
+						color: barColors.cash
+					}, {
+						value: 1000,
+						color: barColors.commission
+					}, {
+						value: 300,
+						color: barColors.bonuses
+					}]
+				}
+			];
+
+			// Инициализация Bar Chart
+			new StackedBarChart('#income-bar-chart', weeklyData, {
+				height: 320,
+				barWidth: 58, // Чуть уменьшил, чтобы было больше воздуха
+				maxValue: 12000
+			});
+
+			// Инициализация Donut Chart
+			const productData = [{
+					label: 'Стандарт',
+					value: 15678,
+					color: '#009dff'
+				},
+				{
+					label: 'Комфорт',
+					value: 12600,
+					color: '#f59c18'
+				},
+				{
+					label: 'Бизнес',
+					value: 8033,
+					color: '#49e622'
+				},
+				{
+					label: 'Прайм',
+					value: 5021,
+					color: '#7a3dff'
+				},
+				{
+					label: 'Доставка',
+					value: 1821,
+					color: '#fa381f'
+				}
+			];
+
+			new DonutChart('#products-donut-chart', productData, {
+				size: 240,
+				thickness: 24,
+				totalLabel: 'Доход',
+				valueFormatter: (val) => `₴ ${val.toLocaleString()}`
+			});
+		});
+	</script>
+
+
+
+	<script src="js/app.min.js?_v=20260302191615"></script>
+	<!-- переключение темы -->
+	<script>
+		(function() {
+			const htmlElement = document.documentElement;
+
+			// 1. Мгновенная установка темы (до отрисовки DOM)
+			const savedTheme = localStorage.getItem('theme');
+			const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
+
+			htmlElement.setAttribute('data-theme', initialTheme);
+
+			// 2. Логика работы переключателя
+			document.addEventListener('DOMContentLoaded', () => {
+				const themeToggle = document.querySelector('.switch'); // Новый класс .switch
+
+				if (themeToggle) {
+					// Синхронизируем положение чекбокса с текущей темой
+					// Если тема light — чекбокс нажат (Checked)
+					themeToggle.checked = (htmlElement.getAttribute('data-theme') === 'light');
+
+					themeToggle.addEventListener('change', () => {
+						const newTheme = themeToggle.checked ? 'light' : 'dark';
+
+						htmlElement.setAttribute('data-theme', newTheme);
+						localStorage.setItem('theme', newTheme);
+					});
+				}
+			});
+		})();
+	</script>
+	<!-- переключение бокоового меню -->
+	<script>
+		const btn = document.querySelector('.dashboard__btn-scroll-dashboard');
+		const wrapper = document.querySelector('.wrapper');
+
+		// 1. Проверяем сохраненное состояние в памяти браузера при загрузке
+		if (localStorage.getItem('sidebar-collapsed') === 'true') {
+			wrapper.classList.add('is-collapsed');
+		}
+
+		btn.addEventListener('click', () => {
+			// 2. Переключаем класс
+			wrapper.classList.toggle('is-collapsed');
+
+			// 3. Сохраняем текущее состояние (true или false)
+			const isCollapsed = wrapper.classList.contains('is-collapsed');
+			localStorage.setItem('sidebar-collapsed', isCollapsed);
+		});
+	</script>
+	<!--  -->
+</body>
+
+</html>
