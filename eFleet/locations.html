@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20260302191615">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260309201145">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -362,7 +362,7 @@
 
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20260302191615"></script>
+	<script src="js/app.min.js?_v=20260309201145"></script>
 	<!-- переключение темы -->
 	<script>
 		(function() {
@@ -413,7 +413,33 @@
 			localStorage.setItem('sidebar-collapsed', isCollapsed);
 		});
 	</script>
-	<!--  -->
+	<!-- активная лишка меню на конкретной страницы -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Получаем текущий путь (например, "/cars.html")
+			const currentPath = window.location.pathname;
+
+			// Находим все ссылки в меню
+			const menuLinks = document.querySelectorAll('.menu__link');
+
+			menuLinks.forEach(link => {
+				// Получаем значение атрибута href
+				const linkPath = link.getAttribute('href');
+
+				// Проверяем, совпадает ли текущий путь с ссылкой
+				// (Используем endsWith, чтобы избежать проблем с полными путями)
+				if (currentPath.endsWith(linkPath)) {
+					// Удаляем активный класс у всех (на всякий случай)
+					document.querySelectorAll('.menu__item').forEach(item => {
+						item.classList.remove('menu__item-active');
+					});
+
+					// Добавляем класс родительскому li
+					link.closest('.menu__item').classList.add('menu__item-active');
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
